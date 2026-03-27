@@ -1,0 +1,38 @@
+[
+  {
+    "id": "search-autocomplete",
+    "slug": "search-autocomplete",
+    "label": "Search Autocomplete",
+    "description": "Fast response query suggestion systems."
+  },
+  {
+    "id": "leaderboards",
+    "slug": "leaderboards",
+    "label": "Leaderboards",
+    "description": "Ranking and score-ordering systems."
+  },
+  {
+    "id": "analytics-dashboards",
+    "slug": "analytics-dashboards",
+    "label": "Analytics Dashboards",
+    "description": "Real-time or periodic dashboard aggregation and display."
+  },
+  {
+    "id": "calendar-scheduling",
+    "slug": "calendar-scheduling",
+    "label": "Calendar Scheduling",
+    "description": "Overlap checks and schedule conflict resolution."
+  },
+  {
+    "id": "recommendation-systems",
+    "slug": "recommendation-systems",
+    "label": "Recommendation Systems",
+    "description": "Similarity and ranking for personalized content."
+  },
+  {
+    "id": "search-suggestions",
+    "slug": "search-suggestions",
+    "label": "Search Suggestions",
+    "description": "Prefix matching and intent hinting in search UX."
+  }
+]

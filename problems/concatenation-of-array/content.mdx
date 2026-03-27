@@ -1,0 +1,13 @@
+# Concatenation Of Array
+
+This is a straightforward array construction problem. The result is deterministic: append each input item twice in order.
+
+## Recognition clues
+
+- Output length is fixed at `2 * n`.
+- The output definition references the same source array in two ranges.
+- No conditional branching is required for correctness.
+
+## Pattern choice
+
+Array duplication is optimal here because every value must be emitted and no faster-than-linear solution exists.

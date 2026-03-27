@@ -1,0 +1,51 @@
+id: search-suggestions-system
+slug: search-suggestions-system
+title: Search Suggestions System
+status: published
+difficulty: Medium
+questionTypeIds:
+  - lookup-frequency-matching
+patternIds:
+  - trie
+featureIds:
+  - search-suggestions
+careerPathIds:
+  - frontend-engineer
+  - backend-engineer
+  - full-stack-engineer
+industryIds:
+  - e-commerce
+  - developer-tools
+companyIds:
+  - amazon
+  - google
+roleIds:
+  - frontend-engineer
+  - backend-engineer
+tagIds:
+  - strings
+  - trie
+  - sorting
+summary: Build incremental typeahead suggestions as a user types.
+whatItAsks: Return up to three lexicographically smallest products for each search prefix.
+recognitionClues:
+  - You need results for every prefix, not one final query.
+  - Results must be ordered and capped.
+  - Prefix filtering dominates the workflow.
+whyPatternFits: Prefix indexing and sorting keep each keystroke response predictable.
+dailyUsefulness: Core mental model for search bars, command palettes, and autocomplete.
+interviewUsefulness: Tests prefix data structures, ordering constraints, and incremental queries.
+realWorldRelevance: Mirrors product search, docs lookup, and in-app finder experiences.
+useCases:
+  - Product autocomplete in ecommerce search.
+  - Command palette query suggestions.
+  - Instant article lookup in docs portals.
+demoIdeas:
+  - Animate suggestions updating on each keystroke.
+  - Compare strict prefix vs fuzzy fallback behavior.
+reusableHelpers:
+  - buildPrefixIndex
+  - rankFuzzyMatches
+relatedProblemSlugs:
+  - two-sum
+  - concatenation-of-array

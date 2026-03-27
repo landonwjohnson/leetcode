@@ -1,0 +1,315 @@
+{
+  "generatedAt": "2026-03-27T18:07:58.703Z",
+  "problems": [
+    {
+      "id": "add-two-numbers",
+      "slug": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "status": "published",
+      "difficulty": "Medium",
+      "questionTypeIds": [
+        "pair-comparison"
+      ],
+      "patternIds": [
+        "two-pointers"
+      ],
+      "featureIds": [
+        "analytics-dashboards"
+      ],
+      "careerPathIds": [
+        "backend-engineer",
+        "full-stack-engineer"
+      ],
+      "industryIds": [
+        "developer-tools"
+      ],
+      "companyIds": [
+        "amazon",
+        "meta"
+      ],
+      "roleIds": [
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays"
+      ],
+      "summary": "Sum two integers represented as reversed digit linked lists and return the result as a linked list.",
+      "whatItAsks": "Walk both lists from the least significant digit, propagate carry, and build the result list.",
+      "recognitionClues": [
+        "Two sequences are consumed in parallel with shared carry state.",
+        "Lists may differ in length; a final carry can add an extra digit.",
+        "Each step only needs the current nodes and the running carry."
+      ],
+      "whyPatternFits": "Two pointers plus carry mimic manual addition and avoid converting whole numbers to primitives.",
+      "dailyUsefulness": "Same step-and-carry idea appears when merging streams or simulating arithmetic on chunked data.",
+      "interviewUsefulness": "Common screen for pointer discipline, edge cases, and dummy-node list construction.",
+      "realWorldRelevance": "Aligns with big-integer APIs, ledger rounding, and incremental numeric pipelines.",
+      "useCases": [
+        "Combine chunked numeric payloads where full conversion to a scalar is unsafe or undesirable.",
+        "Simulate addition in finance or crypto tooling that uses digit or limb sequences.",
+        "Build teaching demos of arbitrary-precision arithmetic from simple list nodes."
+      ],
+      "demoIdeas": [
+        "Step through each pair of digits with an animated carry chip.",
+        "Toggle unequal-length lists to show how the shorter stream is “zero” after it ends."
+      ],
+      "reusableHelpers": [
+        "addDigitsWithCarry"
+      ],
+      "relatedProblemSlugs": [
+        "two-sum",
+        "concatenation-of-array"
+      ],
+      "prompt": "# Add Two Numbers\n\nYou are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each node contains a single digit. Add the two numbers and return the sum as a linked list in the same reverse-digit form.\n\nYou may assume the two numbers do not contain any leading zero, except the number `0` itself.",
+      "content": "",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {\n // dummy = a placeholder node so we don’t have to handle\n        // \"first node\" as a special case\n        ListNode* dummy = new ListNode(0);\n\n        // current = pointer we use to build the new linked list\n        ListNode* current = dummy;\n\n        // carry = stores extra when sum is 10 or more\n        // Example: 8 + 7 = 15 → store 5, carry 1\n        int carry = 0;\n\n        // Keep looping while:\n        // - l1 still has nodes\n        // - l2 still has nodes\n        // - or we still have a carry\n        while (l1 != nullptr || l2 != nullptr || carry != 0) {\n\n            // start with carry from previous step\n\n            int sum = carry;\n\n            // if l1 exists, add its value\n            if (l1 != nullptr) {\n                sum += l1->val;\n\n                l1 = l1->next;\n            }\n\n            // if l2 exists add it's value\n            if(l2 != nullptr){\n                sum += l2->val;\n                l2 = l2->next;\n            }\n\n            // digit = what we store in this node (ones place)\n            int digit = sum % 10;\n\n            // carry = what we pass to the next interation\n            int newCarry = sum / 10;\n\n            // Create a new node with the digit\n            current->next = new ListNode(digit);\n\n            // move current forward\n            current = current->next;\n\n            // Update carry for next loop\n            carry = newCarry;\n\n\n\n        }\n        //dummy was just a helper\n            // return the real head of the result\n            return dummy->next;\n    }\n};",
+        "typescript": ""
+      },
+      "availableLanguages": [
+        "cpp"
+      ],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-03-27T18:07:58.689Z",
+      "searchText": "add two numbers sum two integers represented as reversed digit linked lists and return the result as a linked list. walk both lists from the least significant digit, propagate carry, and build the result list. two sequences are consumed in parallel with shared carry state. lists may differ in length; a final carry can add an extra digit. each step only needs the current nodes and the running carry. combine chunked numeric payloads where full conversion to a scalar is unsafe or undesirable. simulate addition in finance or crypto tooling that uses digit or limb sequences. build teaching demos of arbitrary-precision arithmetic from simple list nodes. step through each pair of digits with an animated carry chip. toggle unequal-length lists to show how the shorter stream is “zero” after it ends. adddigitswithcarry arrays two-pointers pair-comparison"
+    },
+    {
+      "id": "concatenation-of-array",
+      "slug": "concatenation-of-array",
+      "title": "Concatenation Of Array",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "range-substring-subarray"
+      ],
+      "patternIds": [
+        "array-duplication"
+      ],
+      "featureIds": [
+        "analytics-dashboards",
+        "recommendation-systems"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "ios-engineer",
+        "full-stack-engineer"
+      ],
+      "industryIds": [
+        "media-streaming",
+        "consumer-social"
+      ],
+      "companyIds": [
+        "apple",
+        "meta"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "ios-engineer"
+      ],
+      "tagIds": [
+        "arrays",
+        "array-manipulation"
+      ],
+      "summary": "Duplicate array content in sequence to create a 2n output.",
+      "whatItAsks": "Return an array containing the original values followed by the same values again.",
+      "recognitionClues": [
+        "Output length is a direct multiple of input length.",
+        "Result format is explicit and deterministic.",
+        "A single pass append loop is sufficient."
+      ],
+      "whyPatternFits": "Direct array duplication keeps implementation predictable and linear.",
+      "dailyUsefulness": "Useful for cyclic UI lists and repeated fixture generation.",
+      "interviewUsefulness": "Reinforces array construction and complexity reasoning fundamentals.",
+      "realWorldRelevance": "Common in carousels, playback queues, and looped UI experiences.",
+      "useCases": [
+        "Build infinite carousel source data in UI layers.",
+        "Repeat seed data for integration demo scenarios.",
+        "Prepare looping playlist buffers."
+      ],
+      "demoIdeas": [
+        "Animate first and second append passes separately.",
+        "Show output index mapping against input index."
+      ],
+      "reusableHelpers": [
+        "duplicateArray",
+        "mapCircularIndex"
+      ],
+      "relatedProblemSlugs": [
+        "two-sum"
+      ],
+      "prompt": "# Concatenation of Array\n\nGiven an integer array `nums` of length `n`, return an array `ans` of length `2n` where `ans[i] == nums[i]` and `ans[i + n] == nums[i]` for all `0 <= i < n` (0-indexed).\n\nThe output is the original array followed by the same elements again in the same order.",
+      "content": "# Concatenation Of Array\n\nThis is a straightforward array construction problem. The result is deterministic: append each input item twice in order.\n\n## Recognition clues\n\n- Output length is fixed at `2 * n`.\n- The output definition references the same source array in two ranges.\n- No conditional branching is required for correctness.\n\n## Pattern choice\n\nArray duplication is optimal here because every value must be emitted and no faster-than-linear solution exists.",
+      "snippetByLanguage": {
+        "swift": "class Solution {\n    func getConcatenation(_ nums: [Int]) -> [Int] {\n        var result: [Int] = []\n        result.reserveCapacity(nums.count * 2)\n\n        for num in nums {\n            result.append(num)\n        }\n\n        for num in nums {\n            result.append(num)\n        }\n\n        return result\n    }\n}",
+        "cpp": "#include <vector>\n\nclass Solution {\npublic:\n    std::vector<int> getConcatenation(std::vector<int>& nums) {\n        std::vector<int> result;\n        result.reserve(nums.size() * 2);\n\n        for (int value : nums) {\n            result.push_back(value);\n        }\n\n        for (int value : nums) {\n            result.push_back(value);\n        }\n\n        return result;\n    }\n};",
+        "typescript": "export function getConcatenation(nums: number[]): number[] {\n  const result: number[] = [];\n  result.length = 0;\n\n  for (const value of nums) {\n    result.push(value);\n  }\n\n  for (const value of nums) {\n    result.push(value);\n  }\n\n  return result;\n}"
+      },
+      "availableLanguages": [
+        "swift",
+        "cpp",
+        "typescript"
+      ],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-03-27T18:07:58.694Z",
+      "searchText": "concatenation of array duplicate array content in sequence to create a 2n output. return an array containing the original values followed by the same values again. output length is a direct multiple of input length. result format is explicit and deterministic. a single pass append loop is sufficient. build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. animate first and second append passes separately. show output index mapping against input index. duplicatearray mapcircularindex arrays array-manipulation array-duplication range-substring-subarray"
+    },
+    {
+      "id": "search-suggestions-system",
+      "slug": "search-suggestions-system",
+      "title": "Search Suggestions System",
+      "status": "published",
+      "difficulty": "Medium",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "trie"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer",
+        "full-stack-engineer"
+      ],
+      "industryIds": [
+        "e-commerce",
+        "developer-tools"
+      ],
+      "companyIds": [
+        "amazon",
+        "google"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "strings",
+        "trie",
+        "sorting"
+      ],
+      "summary": "Build incremental typeahead suggestions as a user types.",
+      "whatItAsks": "Return up to three lexicographically smallest products for each search prefix.",
+      "recognitionClues": [
+        "You need results for every prefix, not one final query.",
+        "Results must be ordered and capped.",
+        "Prefix filtering dominates the workflow."
+      ],
+      "whyPatternFits": "Prefix indexing and sorting keep each keystroke response predictable.",
+      "dailyUsefulness": "Core mental model for search bars, command palettes, and autocomplete.",
+      "interviewUsefulness": "Tests prefix data structures, ordering constraints, and incremental queries.",
+      "realWorldRelevance": "Mirrors product search, docs lookup, and in-app finder experiences.",
+      "useCases": [
+        "Product autocomplete in ecommerce search.",
+        "Command palette query suggestions.",
+        "Instant article lookup in docs portals."
+      ],
+      "demoIdeas": [
+        "Animate suggestions updating on each keystroke.",
+        "Compare strict prefix vs fuzzy fallback behavior."
+      ],
+      "reusableHelpers": [
+        "buildPrefixIndex",
+        "rankFuzzyMatches"
+      ],
+      "relatedProblemSlugs": [
+        "two-sum",
+        "concatenation-of-array"
+      ],
+      "prompt": "# Search Suggestions System\n\nYou are given an array of string `products` and a string `searchWord`.\n\nDesign a system that suggests **at most three** product names from `products` after each character of `searchWord` is typed. Suggested products must share a common prefix with the substring of `searchWord` typed so far. If more than three products match that prefix, return the three **lexicographically smallest** strings.\n\nReturn a list of lists: the suggestions available after typing the first character, then after the second, and so on until the full `searchWord` has been typed.",
+      "content": "# Search Suggestions System\n\nThis problem models the core behavior behind typeahead UI patterns: as users type each character, the app returns a short list of likely matches.\n\n## Recognition clues\n\n- Output is needed for each prefix of the query.\n- Results are sorted and size-limited.\n- Prefix filtering dominates performance concerns.\n\n## Pattern choice\n\nA sorted list with prefix narrowing (or trie indexing) is ideal for strict LeetCode constraints. In product UI, teams often add fuzzy ranking on top to tolerate typos and partial input.",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "",
+        "typescript": ""
+      },
+      "availableLanguages": [],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-03-27T18:07:58.696Z",
+      "searchText": "search suggestions system build incremental typeahead suggestions as a user types. return up to three lexicographically smallest products for each search prefix. you need results for every prefix, not one final query. results must be ordered and capped. prefix filtering dominates the workflow. product autocomplete in ecommerce search. command palette query suggestions. instant article lookup in docs portals. animate suggestions updating on each keystroke. compare strict prefix vs fuzzy fallback behavior. buildprefixindex rankfuzzymatches strings trie sorting trie lookup-frequency-matching"
+    },
+    {
+      "id": "two-sum",
+      "slug": "two-sum",
+      "title": "Two Sum",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "hash-map"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer",
+        "full-stack-engineer"
+      ],
+      "industryIds": [
+        "developer-tools",
+        "consumer-social"
+      ],
+      "companyIds": [
+        "google",
+        "meta"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays",
+        "hash-map",
+        "two-sum"
+      ],
+      "summary": "Use a hash map to resolve complement lookups in one pass.",
+      "whatItAsks": "Find two indexes whose values add up to a target value.",
+      "recognitionClues": [
+        "The prompt asks for a pair that satisfies a sum constraint.",
+        "A brute-force nested loop works but is too slow.",
+        "You can derive the needed value from current input."
+      ],
+      "whyPatternFits": "Hash map lookups collapse pair search from O(n^2) to O(n).",
+      "dailyUsefulness": "Useful for quick lookup joins and dedup checks in product code.",
+      "interviewUsefulness": "Classic hash map exercise used to evaluate tradeoff fluency.",
+      "realWorldRelevance": "Mirrors matching workflows in reconciliation and telemetry logic.",
+      "useCases": [
+        "Match request IDs and acknowledgment IDs in event streams.",
+        "Resolve complementary values in dashboard filters.",
+        "Validate pair constraints in backend payload processing."
+      ],
+      "demoIdeas": [
+        "Animate map growth and complement checks each iteration.",
+        "Show side-by-side brute force and hash map timelines."
+      ],
+      "reusableHelpers": [
+        "findPairByTarget",
+        "buildIndexMap"
+      ],
+      "relatedProblemSlugs": [
+        "concatenation-of-array"
+      ],
+      "prompt": "# Two Sum\n\nGiven an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.\n\nYou may assume that each input has exactly one solution, and you may not use the same element twice.",
+      "content": "# Two Sum\n\nThis problem teaches a core lookup optimization pattern: while iterating the input once, keep a map from value to index so each new number can immediately check whether its complement has already appeared.\n\n## Recognition clues\n\n- You need a pair (or complementary match) from a single array.\n- The naive nested loop is easy to write but too expensive.\n- The target condition is reversible (`needed = target - current`).\n\n## Pattern choice\n\nHash map is the best fit because it gives near constant-time existence checks while preserving index information needed by the result.",
+      "snippetByLanguage": {
+        "swift": "import Foundation\n\nfunc twoSum(_ nums: [Int], _ target: Int) -> [Int] {\n    var seen: [Int: Int] = [:]\n\n    for (index, num) in nums.enumerated() {\n        let needed = target - num\n        if let otherIndex = seen[needed] {\n            return [otherIndex, index]\n        }\n        seen[num] = index\n    }\n\n    return []\n}",
+        "cpp": "#include <unordered_map>\n#include <vector>\n\nclass Solution {\npublic:\n    std::vector<int> twoSum(std::vector<int>& nums, int target) {\n        std::unordered_map<int, int> seen;\n        for (int i = 0; i < static_cast<int>(nums.size()); i++) {\n            int needed = target - nums[i];\n            if (seen.find(needed) != seen.end()) {\n                return {seen[needed], i};\n            }\n            seen[nums[i]] = i;\n        }\n        return {};\n    }\n};",
+        "typescript": "export function twoSum(nums: number[], target: number): number[] {\n  const seen = new Map<number, number>();\n\n  for (let index = 0; index < nums.length; index += 1) {\n    const current = nums[index];\n    const needed = target - current;\n    const otherIndex = seen.get(needed);\n    if (typeof otherIndex === \"number\") {\n      return [otherIndex, index];\n    }\n    seen.set(current, index);\n  }\n\n  return [];\n}"
+      },
+      "availableLanguages": [
+        "swift",
+        "cpp",
+        "typescript"
+      ],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-03-27T18:07:58.701Z",
+      "searchText": "two sum use a hash map to resolve complement lookups in one pass. find two indexes whose values add up to a target value. the prompt asks for a pair that satisfies a sum constraint. a brute-force nested loop works but is too slow. you can derive the needed value from current input. match request ids and acknowledgment ids in event streams. resolve complementary values in dashboard filters. validate pair constraints in backend payload processing. animate map growth and complement checks each iteration. show side-by-side brute force and hash map timelines. findpairbytarget buildindexmap arrays hash-map two-sum hash-map lookup-frequency-matching"
+    }
+  ]
+}

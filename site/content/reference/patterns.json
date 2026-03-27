@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hash-map",
+    "slug": "hash-map",
+    "label": "Hash Map",
+    "description": "Constant-time lookup pattern using key-value storage."
+  },
+  {
+    "id": "array-duplication",
+    "slug": "array-duplication",
+    "label": "Array Duplication",
+    "description": "Concatenating or repeating sequence data."
+  },
+  {
+    "id": "sliding-window",
+    "slug": "sliding-window",
+    "label": "Sliding Window",
+    "description": "Maintaining a moving range for efficient sequence scans."
+  },
+  {
+    "id": "two-pointers",
+    "slug": "two-pointers",
+    "label": "Two Pointers",
+    "description": "Pointer convergence/expansion pattern on ordered or bounded data."
+  },
+  {
+    "id": "binary-search",
+    "slug": "binary-search",
+    "label": "Binary Search",
+    "description": "Search-space reduction by midpoint checks."
+  },
+  {
+    "id": "trie",
+    "slug": "trie",
+    "label": "Trie",
+    "description": "Prefix tree for fast incremental lookup and autocomplete."
+  }
+]

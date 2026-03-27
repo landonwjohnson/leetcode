@@ -1,0 +1,26 @@
+[
+  {
+    "id": "consumer-social",
+    "slug": "consumer-social",
+    "label": "Consumer Social",
+    "description": "Feeds, interactions, and social graph experiences."
+  },
+  {
+    "id": "e-commerce",
+    "slug": "e-commerce",
+    "label": "E-Commerce",
+    "description": "Ordering, ranking, and catalog systems."
+  },
+  {
+    "id": "developer-tools",
+    "slug": "developer-tools",
+    "label": "Developer Tools",
+    "description": "Searchable docs, indexing, and tooling workflows."
+  },
+  {
+    "id": "media-streaming",
+    "slug": "media-streaming",
+    "label": "Media Streaming",
+    "description": "Playback queues, recommendations, and ranking."
+  }
+]

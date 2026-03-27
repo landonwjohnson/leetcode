@@ -1,0 +1,13 @@
+# Search Suggestions System
+
+This problem models the core behavior behind typeahead UI patterns: as users type each character, the app returns a short list of likely matches.
+
+## Recognition clues
+
+- Output is needed for each prefix of the query.
+- Results are sorted and size-limited.
+- Prefix filtering dominates performance concerns.
+
+## Pattern choice
+
+A sorted list with prefix narrowing (or trie indexing) is ideal for strict LeetCode constraints. In product UI, teams often add fuzzy ranking on top to tolerate typos and partial input.

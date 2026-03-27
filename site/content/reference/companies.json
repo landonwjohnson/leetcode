@@ -1,0 +1,26 @@
+[
+  {
+    "id": "meta",
+    "slug": "meta",
+    "label": "Meta",
+    "description": "Large-scale social and ranking-heavy systems."
+  },
+  {
+    "id": "google",
+    "slug": "google",
+    "label": "Google",
+    "description": "Search, infrastructure, and data-focused systems."
+  },
+  {
+    "id": "apple",
+    "slug": "apple",
+    "label": "Apple",
+    "description": "Performance-focused device and ecosystem software."
+  },
+  {
+    "id": "amazon",
+    "slug": "amazon",
+    "label": "Amazon",
+    "description": "High-scale commerce, cloud, and logistics systems."
+  }
+]

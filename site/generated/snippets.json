@@ -1,0 +1,368 @@
+[
+  {
+    "id": "concatenation-of-array-swift-swift",
+    "slug": "concatenation-of-array-swift-swift",
+    "problemSlug": "concatenation-of-array",
+    "problemTitle": "Concatenation Of Array",
+    "title": "Concatenation Of Array (swift)",
+    "questionType": [
+      "range-substring-subarray"
+    ],
+    "pattern": [
+      "array-duplication"
+    ],
+    "snippetType": "solution",
+    "summary": "Duplicate array content in sequence to create a 2n output.",
+    "description": "Return an array containing the original values followed by the same values again.",
+    "keywords": [
+      "arrays",
+      "array-manipulation"
+    ],
+    "aliases": [],
+    "searchPhrases": [
+      "Build infinite carousel source data in UI layers.",
+      "Repeat seed data for integration demo scenarios.",
+      "Prepare looping playlist buffers."
+    ],
+    "featureMappings": [
+      "analytics-dashboards",
+      "recommendation-systems"
+    ],
+    "careerPaths": [
+      "frontend-engineer",
+      "ios-engineer",
+      "full-stack-engineer"
+    ],
+    "industries": [
+      "media-streaming",
+      "consumer-social"
+    ],
+    "jobRoles": [
+      "frontend-engineer",
+      "ios-engineer"
+    ],
+    "dailyUsefulness": 70,
+    "interviewUsefulness": 70,
+    "priority": 50,
+    "language": "swift",
+    "code": "class Solution {\n    func getConcatenation(_ nums: [Int]) -> [Int] {\n        var result: [Int] = []\n        result.reserveCapacity(nums.count * 2)\n\n        for num in nums {\n            result.append(num)\n        }\n\n        for num in nums {\n            result.append(num)\n        }\n\n        return result\n    }\n}",
+    "relatedProblemSlugs": [
+      "two-sum"
+    ],
+    "relatedSnippetIds": [],
+    "sourcePath": "/Users/landonjohnson/dev/LeetCodeSwift/problems/concatenation-of-array/snippets/swift.swift",
+    "updatedAt": "2026-03-27T18:07:58.702Z",
+    "intentTokens": [
+      "concatenation of array (swift)",
+      "build infinite carousel source data in ui layers.",
+      "repeat seed data for integration demo scenarios.",
+      "prepare looping playlist buffers."
+    ],
+    "searchText": "concatenation of array (swift) concatenation of array duplicate array content in sequence to create a 2n output. return an array containing the original values followed by the same values again. arrays array-manipulation  build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. analytics-dashboards recommendation-systems frontend-engineer ios-engineer full-stack-engineer media-streaming consumer-social frontend-engineer ios-engineer array-duplication range-substring-subarray"
+  },
+  {
+    "id": "concatenation-of-array-cpp-cpp",
+    "slug": "concatenation-of-array-cpp-cpp",
+    "problemSlug": "concatenation-of-array",
+    "problemTitle": "Concatenation Of Array",
+    "title": "Concatenation Of Array (cpp)",
+    "questionType": [
+      "range-substring-subarray"
+    ],
+    "pattern": [
+      "array-duplication"
+    ],
+    "snippetType": "solution",
+    "summary": "Duplicate array content in sequence to create a 2n output.",
+    "description": "Return an array containing the original values followed by the same values again.",
+    "keywords": [
+      "arrays",
+      "array-manipulation"
+    ],
+    "aliases": [],
+    "searchPhrases": [
+      "Build infinite carousel source data in UI layers.",
+      "Repeat seed data for integration demo scenarios.",
+      "Prepare looping playlist buffers."
+    ],
+    "featureMappings": [
+      "analytics-dashboards",
+      "recommendation-systems"
+    ],
+    "careerPaths": [
+      "frontend-engineer",
+      "ios-engineer",
+      "full-stack-engineer"
+    ],
+    "industries": [
+      "media-streaming",
+      "consumer-social"
+    ],
+    "jobRoles": [
+      "frontend-engineer",
+      "ios-engineer"
+    ],
+    "dailyUsefulness": 70,
+    "interviewUsefulness": 70,
+    "priority": 50,
+    "language": "cpp",
+    "code": "#include <vector>\n\nclass Solution {\npublic:\n    std::vector<int> getConcatenation(std::vector<int>& nums) {\n        std::vector<int> result;\n        result.reserve(nums.size() * 2);\n\n        for (int value : nums) {\n            result.push_back(value);\n        }\n\n        for (int value : nums) {\n            result.push_back(value);\n        }\n\n        return result;\n    }\n};",
+    "relatedProblemSlugs": [
+      "two-sum"
+    ],
+    "relatedSnippetIds": [],
+    "sourcePath": "/Users/landonjohnson/dev/LeetCodeSwift/problems/concatenation-of-array/snippets/cpp.cpp",
+    "updatedAt": "2026-03-27T18:07:58.702Z",
+    "intentTokens": [
+      "concatenation of array (cpp)",
+      "build infinite carousel source data in ui layers.",
+      "repeat seed data for integration demo scenarios.",
+      "prepare looping playlist buffers."
+    ],
+    "searchText": "concatenation of array (cpp) concatenation of array duplicate array content in sequence to create a 2n output. return an array containing the original values followed by the same values again. arrays array-manipulation  build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. analytics-dashboards recommendation-systems frontend-engineer ios-engineer full-stack-engineer media-streaming consumer-social frontend-engineer ios-engineer array-duplication range-substring-subarray"
+  },
+  {
+    "id": "concatenation-of-array-typescript-typescript",
+    "slug": "concatenation-of-array-typescript-typescript",
+    "problemSlug": "concatenation-of-array",
+    "problemTitle": "Concatenation Of Array",
+    "title": "Concatenation Of Array (typescript)",
+    "questionType": [
+      "range-substring-subarray"
+    ],
+    "pattern": [
+      "array-duplication"
+    ],
+    "snippetType": "solution",
+    "summary": "Duplicate array content in sequence to create a 2n output.",
+    "description": "Return an array containing the original values followed by the same values again.",
+    "keywords": [
+      "arrays",
+      "array-manipulation"
+    ],
+    "aliases": [],
+    "searchPhrases": [
+      "Build infinite carousel source data in UI layers.",
+      "Repeat seed data for integration demo scenarios.",
+      "Prepare looping playlist buffers."
+    ],
+    "featureMappings": [
+      "analytics-dashboards",
+      "recommendation-systems"
+    ],
+    "careerPaths": [
+      "frontend-engineer",
+      "ios-engineer",
+      "full-stack-engineer"
+    ],
+    "industries": [
+      "media-streaming",
+      "consumer-social"
+    ],
+    "jobRoles": [
+      "frontend-engineer",
+      "ios-engineer"
+    ],
+    "dailyUsefulness": 70,
+    "interviewUsefulness": 70,
+    "priority": 50,
+    "language": "typescript",
+    "code": "export function getConcatenation(nums: number[]): number[] {\n  const result: number[] = [];\n  result.length = 0;\n\n  for (const value of nums) {\n    result.push(value);\n  }\n\n  for (const value of nums) {\n    result.push(value);\n  }\n\n  return result;\n}",
+    "relatedProblemSlugs": [
+      "two-sum"
+    ],
+    "relatedSnippetIds": [],
+    "sourcePath": "/Users/landonjohnson/dev/LeetCodeSwift/problems/concatenation-of-array/snippets/typescript.ts",
+    "updatedAt": "2026-03-27T18:07:58.702Z",
+    "intentTokens": [
+      "concatenation of array (typescript)",
+      "build infinite carousel source data in ui layers.",
+      "repeat seed data for integration demo scenarios.",
+      "prepare looping playlist buffers."
+    ],
+    "searchText": "concatenation of array (typescript) concatenation of array duplicate array content in sequence to create a 2n output. return an array containing the original values followed by the same values again. arrays array-manipulation  build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. analytics-dashboards recommendation-systems frontend-engineer ios-engineer full-stack-engineer media-streaming consumer-social frontend-engineer ios-engineer array-duplication range-substring-subarray"
+  },
+  {
+    "id": "two-sum-swift-swift",
+    "slug": "two-sum-swift-swift",
+    "problemSlug": "two-sum",
+    "problemTitle": "Two Sum",
+    "title": "Two Sum (swift)",
+    "questionType": [
+      "lookup-frequency-matching"
+    ],
+    "pattern": [
+      "hash-map"
+    ],
+    "snippetType": "solution",
+    "summary": "Use a hash map to resolve complement lookups in one pass.",
+    "description": "Find two indexes whose values add up to a target value.",
+    "keywords": [
+      "arrays",
+      "hash-map",
+      "two-sum"
+    ],
+    "aliases": [],
+    "searchPhrases": [
+      "Match request IDs and acknowledgment IDs in event streams.",
+      "Resolve complementary values in dashboard filters.",
+      "Validate pair constraints in backend payload processing."
+    ],
+    "featureMappings": [
+      "search-suggestions"
+    ],
+    "careerPaths": [
+      "frontend-engineer",
+      "backend-engineer",
+      "full-stack-engineer"
+    ],
+    "industries": [
+      "developer-tools",
+      "consumer-social"
+    ],
+    "jobRoles": [
+      "frontend-engineer",
+      "backend-engineer"
+    ],
+    "dailyUsefulness": 70,
+    "interviewUsefulness": 70,
+    "priority": 50,
+    "language": "swift",
+    "code": "import Foundation\n\nfunc twoSum(_ nums: [Int], _ target: Int) -> [Int] {\n    var seen: [Int: Int] = [:]\n\n    for (index, num) in nums.enumerated() {\n        let needed = target - num\n        if let otherIndex = seen[needed] {\n            return [otherIndex, index]\n        }\n        seen[num] = index\n    }\n\n    return []\n}",
+    "relatedProblemSlugs": [
+      "concatenation-of-array"
+    ],
+    "relatedSnippetIds": [],
+    "sourcePath": "/Users/landonjohnson/dev/LeetCodeSwift/problems/two-sum/snippets/swift.swift",
+    "updatedAt": "2026-03-27T18:07:58.703Z",
+    "intentTokens": [
+      "two sum (swift)",
+      "match request ids and acknowledgment ids in event streams.",
+      "resolve complementary values in dashboard filters.",
+      "validate pair constraints in backend payload processing."
+    ],
+    "searchText": "two sum (swift) two sum use a hash map to resolve complement lookups in one pass. find two indexes whose values add up to a target value. arrays hash-map two-sum  match request ids and acknowledgment ids in event streams. resolve complementary values in dashboard filters. validate pair constraints in backend payload processing. search-suggestions frontend-engineer backend-engineer full-stack-engineer developer-tools consumer-social frontend-engineer backend-engineer hash-map lookup-frequency-matching"
+  },
+  {
+    "id": "two-sum-cpp-cpp",
+    "slug": "two-sum-cpp-cpp",
+    "problemSlug": "two-sum",
+    "problemTitle": "Two Sum",
+    "title": "Two Sum (cpp)",
+    "questionType": [
+      "lookup-frequency-matching"
+    ],
+    "pattern": [
+      "hash-map"
+    ],
+    "snippetType": "solution",
+    "summary": "Use a hash map to resolve complement lookups in one pass.",
+    "description": "Find two indexes whose values add up to a target value.",
+    "keywords": [
+      "arrays",
+      "hash-map",
+      "two-sum"
+    ],
+    "aliases": [],
+    "searchPhrases": [
+      "Match request IDs and acknowledgment IDs in event streams.",
+      "Resolve complementary values in dashboard filters.",
+      "Validate pair constraints in backend payload processing."
+    ],
+    "featureMappings": [
+      "search-suggestions"
+    ],
+    "careerPaths": [
+      "frontend-engineer",
+      "backend-engineer",
+      "full-stack-engineer"
+    ],
+    "industries": [
+      "developer-tools",
+      "consumer-social"
+    ],
+    "jobRoles": [
+      "frontend-engineer",
+      "backend-engineer"
+    ],
+    "dailyUsefulness": 70,
+    "interviewUsefulness": 70,
+    "priority": 50,
+    "language": "cpp",
+    "code": "#include <unordered_map>\n#include <vector>\n\nclass Solution {\npublic:\n    std::vector<int> twoSum(std::vector<int>& nums, int target) {\n        std::unordered_map<int, int> seen;\n        for (int i = 0; i < static_cast<int>(nums.size()); i++) {\n            int needed = target - nums[i];\n            if (seen.find(needed) != seen.end()) {\n                return {seen[needed], i};\n            }\n            seen[nums[i]] = i;\n        }\n        return {};\n    }\n};",
+    "relatedProblemSlugs": [
+      "concatenation-of-array"
+    ],
+    "relatedSnippetIds": [],
+    "sourcePath": "/Users/landonjohnson/dev/LeetCodeSwift/problems/two-sum/snippets/cpp.cpp",
+    "updatedAt": "2026-03-27T18:07:58.703Z",
+    "intentTokens": [
+      "two sum (cpp)",
+      "match request ids and acknowledgment ids in event streams.",
+      "resolve complementary values in dashboard filters.",
+      "validate pair constraints in backend payload processing."
+    ],
+    "searchText": "two sum (cpp) two sum use a hash map to resolve complement lookups in one pass. find two indexes whose values add up to a target value. arrays hash-map two-sum  match request ids and acknowledgment ids in event streams. resolve complementary values in dashboard filters. validate pair constraints in backend payload processing. search-suggestions frontend-engineer backend-engineer full-stack-engineer developer-tools consumer-social frontend-engineer backend-engineer hash-map lookup-frequency-matching"
+  },
+  {
+    "id": "two-sum-typescript-typescript",
+    "slug": "two-sum-typescript-typescript",
+    "problemSlug": "two-sum",
+    "problemTitle": "Two Sum",
+    "title": "Two Sum (typescript)",
+    "questionType": [
+      "lookup-frequency-matching"
+    ],
+    "pattern": [
+      "hash-map"
+    ],
+    "snippetType": "solution",
+    "summary": "Use a hash map to resolve complement lookups in one pass.",
+    "description": "Find two indexes whose values add up to a target value.",
+    "keywords": [
+      "arrays",
+      "hash-map",
+      "two-sum"
+    ],
+    "aliases": [],
+    "searchPhrases": [
+      "Match request IDs and acknowledgment IDs in event streams.",
+      "Resolve complementary values in dashboard filters.",
+      "Validate pair constraints in backend payload processing."
+    ],
+    "featureMappings": [
+      "search-suggestions"
+    ],
+    "careerPaths": [
+      "frontend-engineer",
+      "backend-engineer",
+      "full-stack-engineer"
+    ],
+    "industries": [
+      "developer-tools",
+      "consumer-social"
+    ],
+    "jobRoles": [
+      "frontend-engineer",
+      "backend-engineer"
+    ],
+    "dailyUsefulness": 70,
+    "interviewUsefulness": 70,
+    "priority": 50,
+    "language": "typescript",
+    "code": "export function twoSum(nums: number[], target: number): number[] {\n  const seen = new Map<number, number>();\n\n  for (let index = 0; index < nums.length; index += 1) {\n    const current = nums[index];\n    const needed = target - current;\n    const otherIndex = seen.get(needed);\n    if (typeof otherIndex === \"number\") {\n      return [otherIndex, index];\n    }\n    seen.set(current, index);\n  }\n\n  return [];\n}",
+    "relatedProblemSlugs": [
+      "concatenation-of-array"
+    ],
+    "relatedSnippetIds": [],
+    "sourcePath": "/Users/landonjohnson/dev/LeetCodeSwift/problems/two-sum/snippets/typescript.ts",
+    "updatedAt": "2026-03-27T18:07:58.703Z",
+    "intentTokens": [
+      "two sum (typescript)",
+      "match request ids and acknowledgment ids in event streams.",
+      "resolve complementary values in dashboard filters.",
+      "validate pair constraints in backend payload processing."
+    ],
+    "searchText": "two sum (typescript) two sum use a hash map to resolve complement lookups in one pass. find two indexes whose values add up to a target value. arrays hash-map two-sum  match request ids and acknowledgment ids in event streams. resolve complementary values in dashboard filters. validate pair constraints in backend payload processing. search-suggestions frontend-engineer backend-engineer full-stack-engineer developer-tools consumer-social frontend-engineer backend-engineer hash-map lookup-frequency-matching"
+  }
+]

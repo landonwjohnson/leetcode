@@ -1,0 +1,50 @@
+[
+  {
+    "id": "frontend-engineer",
+    "slug": "frontend-engineer",
+    "label": "Frontend Engineer",
+    "description": "Builds UI-heavy products and interaction-driven experiences."
+  },
+  {
+    "id": "backend-engineer",
+    "slug": "backend-engineer",
+    "label": "Backend Engineer",
+    "description": "Builds APIs, services, and data-intensive systems."
+  },
+  {
+    "id": "full-stack-engineer",
+    "slug": "full-stack-engineer",
+    "label": "Full Stack Engineer",
+    "description": "Owns product work across client, server, and data boundaries."
+  },
+  {
+    "id": "ios-engineer",
+    "slug": "ios-engineer",
+    "label": "iOS Engineer",
+    "description": "Builds native iOS applications and mobile user flows."
+  },
+  {
+    "id": "platform-engineer",
+    "slug": "platform-engineer",
+    "label": "Platform Engineer",
+    "description": "Builds reusable internal systems and development platforms."
+  },
+  {
+    "id": "data-engineer",
+    "slug": "data-engineer",
+    "label": "Data Engineer",
+    "description": "Builds data pipelines, transformation jobs, and analytics foundations."
+  },
+  {
+    "id": "machine-learning-engineer",
+    "slug": "machine-learning-engineer",
+    "label": "Machine Learning Engineer",
+    "description": "Builds and serves ML features, retrieval, and model-centric systems."
+  },
+  {
+    "id": "infrastructure-engineer",
+    "slug": "infrastructure-engineer",
+    "label": "Infrastructure Engineer",
+    "description": "Builds reliability, deployment, and scalable runtime systems."
+  }
+]

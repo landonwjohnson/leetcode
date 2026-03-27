@@ -1,0 +1,329 @@
+{
+  "byCareerPath": [
+    {
+      "id": "full-stack-engineer",
+      "slug": "full-stack-engineer",
+      "label": "Full Stack Engineer",
+      "description": "Owns product work across client, server, and data boundaries.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "backend-engineer",
+      "slug": "backend-engineer",
+      "label": "Backend Engineer",
+      "description": "Builds APIs, services, and data-intensive systems.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "frontend-engineer",
+      "slug": "frontend-engineer",
+      "label": "Frontend Engineer",
+      "description": "Builds UI-heavy products and interaction-driven experiences.",
+      "problemSlugs": [
+        "concatenation-of-array",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "ios-engineer",
+      "slug": "ios-engineer",
+      "label": "iOS Engineer",
+      "description": "Builds native iOS applications and mobile user flows.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    }
+  ],
+  "byQuestionType": [
+    {
+      "id": "lookup-frequency-matching",
+      "slug": "lookup-frequency-matching",
+      "label": "Lookup / Frequency / Matching",
+      "description": "Lookup-heavy questions solved with maps, sets, or counters.",
+      "problemSlugs": [
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "pair-comparison",
+      "slug": "pair-comparison",
+      "label": "Pair / Comparison",
+      "description": "Pair-wise checks and comparison-driven logic.",
+      "problemSlugs": [
+        "add-two-numbers"
+      ]
+    },
+    {
+      "id": "range-substring-subarray",
+      "slug": "range-substring-subarray",
+      "label": "Range / Substring / Subarray",
+      "description": "Windowed and range-bounded sequence problems.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    }
+  ],
+  "byFeature": [
+    {
+      "id": "analytics-dashboards",
+      "slug": "analytics-dashboards",
+      "label": "Analytics Dashboards",
+      "description": "Real-time or periodic dashboard aggregation and display.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array"
+      ]
+    },
+    {
+      "id": "search-suggestions",
+      "slug": "search-suggestions",
+      "label": "Search Suggestions",
+      "description": "Prefix matching and intent hinting in search UX.",
+      "problemSlugs": [
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "recommendation-systems",
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems",
+      "description": "Similarity and ranking for personalized content.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    }
+  ],
+  "byPattern": [
+    {
+      "id": "array-duplication",
+      "slug": "array-duplication",
+      "label": "Array Duplication",
+      "description": "Concatenating or repeating sequence data.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    },
+    {
+      "id": "hash-map",
+      "slug": "hash-map",
+      "label": "Hash Map",
+      "description": "Constant-time lookup pattern using key-value storage.",
+      "problemSlugs": [
+        "two-sum"
+      ]
+    },
+    {
+      "id": "trie",
+      "slug": "trie",
+      "label": "Trie",
+      "description": "Prefix tree for fast incremental lookup and autocomplete.",
+      "problemSlugs": [
+        "search-suggestions-system"
+      ]
+    },
+    {
+      "id": "two-pointers",
+      "slug": "two-pointers",
+      "label": "Two Pointers",
+      "description": "Pointer convergence/expansion pattern on ordered or bounded data.",
+      "problemSlugs": [
+        "add-two-numbers"
+      ]
+    }
+  ],
+  "byCompany": [
+    {
+      "id": "meta",
+      "slug": "meta",
+      "label": "Meta",
+      "description": "Large-scale social and ranking-heavy systems.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "amazon",
+      "slug": "amazon",
+      "label": "Amazon",
+      "description": "High-scale commerce, cloud, and logistics systems.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "search-suggestions-system"
+      ]
+    },
+    {
+      "id": "google",
+      "slug": "google",
+      "label": "Google",
+      "description": "Search, infrastructure, and data-focused systems.",
+      "problemSlugs": [
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "apple",
+      "slug": "apple",
+      "label": "Apple",
+      "description": "Performance-focused device and ecosystem software.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    }
+  ],
+  "byRole": [
+    {
+      "id": "backend-engineer",
+      "slug": "backend-engineer",
+      "label": "Backend Engineer",
+      "description": "Builds APIs and backend data workflows.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "frontend-engineer",
+      "slug": "frontend-engineer",
+      "label": "Frontend Engineer",
+      "description": "Builds UI architecture and user-facing interactions.",
+      "problemSlugs": [
+        "concatenation-of-array",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "ios-engineer",
+      "slug": "ios-engineer",
+      "label": "iOS Engineer",
+      "description": "Builds native iOS experiences.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    }
+  ],
+  "byIndustry": [
+    {
+      "id": "developer-tools",
+      "slug": "developer-tools",
+      "label": "Developer Tools",
+      "description": "Searchable docs, indexing, and tooling workflows.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "consumer-social",
+      "slug": "consumer-social",
+      "label": "Consumer Social",
+      "description": "Feeds, interactions, and social graph experiences.",
+      "problemSlugs": [
+        "concatenation-of-array",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "e-commerce",
+      "slug": "e-commerce",
+      "label": "E-Commerce",
+      "description": "Ordering, ranking, and catalog systems.",
+      "problemSlugs": [
+        "search-suggestions-system"
+      ]
+    },
+    {
+      "id": "media-streaming",
+      "slug": "media-streaming",
+      "label": "Media Streaming",
+      "description": "Playback queues, recommendations, and ranking.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    }
+  ],
+  "byTag": [
+    {
+      "id": "arrays",
+      "slug": "arrays",
+      "label": "Arrays",
+      "description": "Sequence data operations and array transformations.",
+      "problemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "array-manipulation",
+      "slug": "array-manipulation",
+      "label": "Array Manipulation",
+      "description": "Reshaping and combining array data.",
+      "problemSlugs": [
+        "concatenation-of-array"
+      ]
+    },
+    {
+      "id": "hash-map",
+      "slug": "hash-map",
+      "label": "Hash Map",
+      "description": "Map-based lookups and key grouping.",
+      "problemSlugs": [
+        "two-sum"
+      ]
+    },
+    {
+      "id": "sorting",
+      "slug": "sorting",
+      "label": "Sorting",
+      "description": "Ordering data for deterministic retrieval and ranking.",
+      "problemSlugs": [
+        "search-suggestions-system"
+      ]
+    },
+    {
+      "id": "strings",
+      "slug": "strings",
+      "label": "Strings",
+      "description": "Prefix/suffix and text transformation operations.",
+      "problemSlugs": [
+        "search-suggestions-system"
+      ]
+    },
+    {
+      "id": "trie",
+      "slug": "trie",
+      "label": "Trie",
+      "description": "Prefix-tree modeling for autocomplete and dictionary search.",
+      "problemSlugs": [
+        "search-suggestions-system"
+      ]
+    },
+    {
+      "id": "two-sum",
+      "slug": "two-sum",
+      "label": "Two Sum",
+      "description": "Pair matching with complementary lookup.",
+      "problemSlugs": [
+        "two-sum"
+      ]
+    }
+  ]
+}
