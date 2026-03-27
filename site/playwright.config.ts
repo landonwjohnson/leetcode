@@ -12,7 +12,7 @@ export default defineConfig({
     trace: "on-first-retry"
   },
   webServer: {
-    command: "npm run start:e2e",
+    command: "npm run build && npm run serve:e2e",
     url: "http://127.0.0.1:3010",
     reuseExistingServer: false,
     timeout: 240_000

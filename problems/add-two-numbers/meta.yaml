@@ -1,0 +1,45 @@
+id: add-two-numbers
+slug: add-two-numbers
+title: Add Two Numbers
+status: published
+difficulty: Medium
+questionTypeIds:
+  - pair-comparison
+patternIds:
+  - two-pointers
+featureIds:
+  - analytics-dashboards
+careerPathIds:
+  - backend-engineer
+  - full-stack-engineer
+industryIds:
+  - developer-tools
+companyIds:
+  - amazon
+  - meta
+roleIds:
+  - backend-engineer
+tagIds:
+  - arrays
+summary: Sum two integers represented as reversed digit linked lists and return the result as a linked list.
+whatItAsks: Walk both lists from the least significant digit, propagate carry, and build the result list.
+recognitionClues:
+  - Two sequences are consumed in parallel with shared carry state.
+  - Lists may differ in length; a final carry can add an extra digit.
+  - Each step only needs the current nodes and the running carry.
+whyPatternFits: Two pointers plus carry mimic manual addition and avoid converting whole numbers to primitives.
+dailyUsefulness: Same step-and-carry idea appears when merging streams or simulating arithmetic on chunked data.
+interviewUsefulness: Common screen for pointer discipline, edge cases, and dummy-node list construction.
+realWorldRelevance: Aligns with big-integer APIs, ledger rounding, and incremental numeric pipelines.
+useCases:
+  - Combine chunked numeric payloads where full conversion to a scalar is unsafe or undesirable.
+  - Simulate addition in finance or crypto tooling that uses digit or limb sequences.
+  - Build teaching demos of arbitrary-precision arithmetic from simple list nodes.
+demoIdeas:
+  - Step through each pair of digits with an animated carry chip.
+  - Toggle unequal-length lists to show how the shorter stream is “zero” after it ends.
+reusableHelpers:
+  - addDigitsWithCarry
+relatedProblemSlugs:
+  - two-sum
+  - concatenation-of-array

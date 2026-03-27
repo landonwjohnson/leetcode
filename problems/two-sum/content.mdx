@@ -1,0 +1,13 @@
+# Two Sum
+
+This problem teaches a core lookup optimization pattern: while iterating the input once, keep a map from value to index so each new number can immediately check whether its complement has already appeared.
+
+## Recognition clues
+
+- You need a pair (or complementary match) from a single array.
+- The naive nested loop is easy to write but too expensive.
+- The target condition is reversible (`needed = target - current`).
+
+## Pattern choice
+
+Hash map is the best fit because it gives near constant-time existence checks while preserving index information needed by the result.

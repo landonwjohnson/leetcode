@@ -2,20 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import type { ReactElement } from "react";
-import { getAllProblems } from "@/lib/content";
+import { getAllProblems, getIndexEntries } from "@/lib/content";
 import { absoluteUrl, withBasePath } from "@/lib/seo-config";
 
 type Params = { tag: string };
 
 export function generateStaticParams(): Params[] {
-  const tags = new Set<string>();
-  for (const problem of getAllProblems()) {
-    for (const tag of problem.tags) {
-      tags.add(tag);
-    }
-  }
-
-  return Array.from(tags).map((tag: string): Params => ({ tag }));
+  return getIndexEntries("byTag").map((entry): Params => ({ tag: entry.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
@@ -31,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 
 export default async function TagPage({ params }: { params: Promise<Params> }): Promise<ReactElement> {
   const resolvedParams = await params;
-  const list = getAllProblems().filter((problem): boolean => problem.tags.includes(resolvedParams.tag));
+  const list = getAllProblems().filter((problem): boolean => problem.tagIds.includes(resolvedParams.tag));
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

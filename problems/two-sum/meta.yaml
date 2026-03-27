@@ -1,0 +1,50 @@
+id: two-sum
+slug: two-sum
+title: Two Sum
+status: published
+difficulty: Easy
+questionTypeIds:
+  - lookup-frequency-matching
+patternIds:
+  - hash-map
+featureIds:
+  - search-suggestions
+careerPathIds:
+  - frontend-engineer
+  - backend-engineer
+  - full-stack-engineer
+industryIds:
+  - developer-tools
+  - consumer-social
+companyIds:
+  - google
+  - meta
+roleIds:
+  - frontend-engineer
+  - backend-engineer
+tagIds:
+  - arrays
+  - hash-map
+  - two-sum
+summary: Use a hash map to resolve complement lookups in one pass.
+whatItAsks: Find two indexes whose values add up to a target value.
+recognitionClues:
+  - The prompt asks for a pair that satisfies a sum constraint.
+  - A brute-force nested loop works but is too slow.
+  - You can derive the needed value from current input.
+whyPatternFits: Hash map lookups collapse pair search from O(n^2) to O(n).
+dailyUsefulness: Useful for quick lookup joins and dedup checks in product code.
+interviewUsefulness: Classic hash map exercise used to evaluate tradeoff fluency.
+realWorldRelevance: Mirrors matching workflows in reconciliation and telemetry logic.
+useCases:
+  - Match request IDs and acknowledgment IDs in event streams.
+  - Resolve complementary values in dashboard filters.
+  - Validate pair constraints in backend payload processing.
+demoIdeas:
+  - Animate map growth and complement checks each iteration.
+  - Show side-by-side brute force and hash map timelines.
+reusableHelpers:
+  - findPairByTarget
+  - buildIndexMap
+relatedProblemSlugs:
+  - concatenation-of-array

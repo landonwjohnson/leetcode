@@ -10,10 +10,8 @@ type Params = { language: string };
 export function generateStaticParams(): Params[] {
   const languages = new Set<string>();
   for (const problem of getAllProblems()) {
-    for (const [language, code] of Object.entries(problem.languages)) {
-      if (code) {
-        languages.add(language);
-      }
+    for (const language of problem.availableLanguages) {
+      languages.add(language);
     }
   }
 
@@ -33,9 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 
 export default async function LanguagePage({ params }: { params: Promise<Params> }): Promise<ReactElement> {
   const resolvedParams = await params;
-  const list = getAllProblems().filter(
-    (problem): boolean => typeof problem.languages[resolvedParams.language as keyof typeof problem.languages] === "string"
-  );
+  const list = getAllProblems().filter((problem): boolean => problem.availableLanguages.includes(resolvedParams.language as never));
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

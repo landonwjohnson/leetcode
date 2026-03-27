@@ -1,0 +1,44 @@
+[
+  {
+    "id": "lookup-frequency-matching",
+    "slug": "lookup-frequency-matching",
+    "label": "Lookup / Frequency / Matching",
+    "description": "Lookup-heavy questions solved with maps, sets, or counters."
+  },
+  {
+    "id": "range-substring-subarray",
+    "slug": "range-substring-subarray",
+    "label": "Range / Substring / Subarray",
+    "description": "Windowed and range-bounded sequence problems."
+  },
+  {
+    "id": "pair-comparison",
+    "slug": "pair-comparison",
+    "label": "Pair / Comparison",
+    "description": "Pair-wise checks and comparison-driven logic."
+  },
+  {
+    "id": "search-threshold-sorted-data",
+    "slug": "search-threshold-sorted-data",
+    "label": "Search / Threshold / Sorted Data",
+    "description": "Binary-search style threshold and sorted data problems."
+  },
+  {
+    "id": "tree-hierarchy",
+    "slug": "tree-hierarchy",
+    "label": "Tree / Hierarchy",
+    "description": "Tree traversal and hierarchy navigation."
+  },
+  {
+    "id": "graph-connected-components-dependencies",
+    "slug": "graph-connected-components-dependencies",
+    "label": "Graph / Connected Components / Dependencies",
+    "description": "Dependency and connectivity models represented as graphs."
+  },
+  {
+    "id": "optimization-dynamic-programming",
+    "slug": "optimization-dynamic-programming",
+    "label": "Optimization / Dynamic Programming",
+    "description": "Optimal substructure and state transition questions."
+  }
+]

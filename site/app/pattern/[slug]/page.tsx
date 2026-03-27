@@ -1,0 +1,31 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import type { ReactElement } from "react";
+import { CategoryPageView } from "@/components/CategoryPageView";
+import { getIndexEntries, getIndexEntryBySlug, getProblemsBySlugs } from "@/lib/content";
+import { withBasePath } from "@/lib/seo-config";
+
+type Params = { slug: string };
+
+export function generateStaticParams(): Params[] {
+  return getIndexEntries("byPattern").map((entry) => ({ slug: entry.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const resolved = await params;
+  const entry = getIndexEntryBySlug("byPattern", resolved.slug);
+  if (!entry) return {};
+  return {
+    title: entry.label,
+    description: entry.description,
+    alternates: { canonical: withBasePath(`/pattern/${entry.slug}`) }
+  };
+}
+
+export default async function PatternPage({ params }: { params: Promise<Params> }): Promise<ReactElement> {
+  const resolved = await params;
+  const entry = getIndexEntryBySlug("byPattern", resolved.slug);
+  if (!entry) notFound();
+  const problems = getProblemsBySlugs(entry.problemSlugs);
+  return <CategoryPageView title={entry.label} description={entry.description} problems={problems} />;
+}

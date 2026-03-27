@@ -1,0 +1,185 @@
+[
+  {
+    "slug": "add-two-numbers",
+    "title": "Add Two Numbers",
+    "summary": "Sum two integers represented as reversed digit linked lists and return the result as a linked list.",
+    "questionTypes": [
+      "Pair / Comparison"
+    ],
+    "patterns": [
+      "Two Pointers"
+    ],
+    "features": [
+      "Analytics Dashboards"
+    ],
+    "careerPaths": [
+      "Backend Engineer",
+      "Full Stack Engineer"
+    ],
+    "companies": [
+      "Amazon",
+      "Meta"
+    ],
+    "roles": [
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools"
+    ],
+    "tags": [
+      "Arrays"
+    ],
+    "useCases": [
+      "Combine chunked numeric payloads where full conversion to a scalar is unsafe or undesirable.",
+      "Simulate addition in finance or crypto tooling that uses digit or limb sequences.",
+      "Build teaching demos of arbitrary-precision arithmetic from simple list nodes."
+    ],
+    "recognitionClues": [
+      "Two sequences are consumed in parallel with shared carry state.",
+      "Lists may differ in length; a final carry can add an extra digit.",
+      "Each step only needs the current nodes and the running carry."
+    ],
+    "searchableText": "add two numbers sum two integers represented as reversed digit linked lists and return the result as a linked list. pair / comparison two pointers analytics dashboards backend engineer full stack engineer amazon meta backend engineer developer tools arrays combine chunked numeric payloads where full conversion to a scalar is unsafe or undesirable. simulate addition in finance or crypto tooling that uses digit or limb sequences. build teaching demos of arbitrary-precision arithmetic from simple list nodes. two sequences are consumed in parallel with shared carry state. lists may differ in length; a final carry can add an extra digit. each step only needs the current nodes and the running carry."
+  },
+  {
+    "slug": "concatenation-of-array",
+    "title": "Concatenation Of Array",
+    "summary": "Duplicate array content in sequence to create a 2n output.",
+    "questionTypes": [
+      "Range / Substring / Subarray"
+    ],
+    "patterns": [
+      "Array Duplication"
+    ],
+    "features": [
+      "Analytics Dashboards",
+      "Recommendation Systems"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "iOS Engineer",
+      "Full Stack Engineer"
+    ],
+    "companies": [
+      "Apple",
+      "Meta"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "iOS Engineer"
+    ],
+    "industries": [
+      "Media Streaming",
+      "Consumer Social"
+    ],
+    "tags": [
+      "Arrays",
+      "Array Manipulation"
+    ],
+    "useCases": [
+      "Build infinite carousel source data in UI layers.",
+      "Repeat seed data for integration demo scenarios.",
+      "Prepare looping playlist buffers."
+    ],
+    "recognitionClues": [
+      "Output length is a direct multiple of input length.",
+      "Result format is explicit and deterministic.",
+      "A single pass append loop is sufficient."
+    ],
+    "searchableText": "concatenation of array duplicate array content in sequence to create a 2n output. range / substring / subarray array duplication analytics dashboards recommendation systems frontend engineer ios engineer full stack engineer apple meta frontend engineer ios engineer media streaming consumer social arrays array manipulation build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. output length is a direct multiple of input length. result format is explicit and deterministic. a single pass append loop is sufficient."
+  },
+  {
+    "slug": "search-suggestions-system",
+    "title": "Search Suggestions System",
+    "summary": "Build incremental typeahead suggestions as a user types.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Trie"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer",
+      "Full Stack Engineer"
+    ],
+    "companies": [
+      "Amazon",
+      "Google"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "E-Commerce",
+      "Developer Tools"
+    ],
+    "tags": [
+      "Strings",
+      "Trie",
+      "Sorting"
+    ],
+    "useCases": [
+      "Product autocomplete in ecommerce search.",
+      "Command palette query suggestions.",
+      "Instant article lookup in docs portals."
+    ],
+    "recognitionClues": [
+      "You need results for every prefix, not one final query.",
+      "Results must be ordered and capped.",
+      "Prefix filtering dominates the workflow."
+    ],
+    "searchableText": "search suggestions system build incremental typeahead suggestions as a user types. lookup / frequency / matching trie search suggestions frontend engineer backend engineer full stack engineer amazon google frontend engineer backend engineer e-commerce developer tools strings trie sorting product autocomplete in ecommerce search. command palette query suggestions. instant article lookup in docs portals. you need results for every prefix, not one final query. results must be ordered and capped. prefix filtering dominates the workflow."
+  },
+  {
+    "slug": "two-sum",
+    "title": "Two Sum",
+    "summary": "Use a hash map to resolve complement lookups in one pass.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Hash Map"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer",
+      "Full Stack Engineer"
+    ],
+    "companies": [
+      "Google",
+      "Meta"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools",
+      "Consumer Social"
+    ],
+    "tags": [
+      "Arrays",
+      "Hash Map",
+      "Two Sum"
+    ],
+    "useCases": [
+      "Match request IDs and acknowledgment IDs in event streams.",
+      "Resolve complementary values in dashboard filters.",
+      "Validate pair constraints in backend payload processing."
+    ],
+    "recognitionClues": [
+      "The prompt asks for a pair that satisfies a sum constraint.",
+      "A brute-force nested loop works but is too slow.",
+      "You can derive the needed value from current input."
+    ],
+    "searchableText": "two sum use a hash map to resolve complement lookups in one pass. lookup / frequency / matching hash map search suggestions frontend engineer backend engineer full stack engineer google meta frontend engineer backend engineer developer tools consumer social arrays hash map two sum match request ids and acknowledgment ids in event streams. resolve complementary values in dashboard filters. validate pair constraints in backend payload processing. the prompt asks for a pair that satisfies a sum constraint. a brute-force nested loop works but is too slow. you can derive the needed value from current input."
+  }
+]

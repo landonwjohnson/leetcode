@@ -1,0 +1,26 @@
+[
+  {
+    "id": "frontend-engineer",
+    "slug": "frontend-engineer",
+    "label": "Frontend Engineer",
+    "description": "Builds UI architecture and user-facing interactions."
+  },
+  {
+    "id": "backend-engineer",
+    "slug": "backend-engineer",
+    "label": "Backend Engineer",
+    "description": "Builds APIs and backend data workflows."
+  },
+  {
+    "id": "ios-engineer",
+    "slug": "ios-engineer",
+    "label": "iOS Engineer",
+    "description": "Builds native iOS experiences."
+  },
+  {
+    "id": "platform-engineer",
+    "slug": "platform-engineer",
+    "label": "Platform Engineer",
+    "description": "Builds internal shared systems and tooling."
+  }
+]

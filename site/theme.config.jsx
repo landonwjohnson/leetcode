@@ -1,5 +1,5 @@
 export default {
-  logo: <span>Algorithm Snippets</span>,
+  logo: "AlgoRef",
   project: {
     link: "https://github.com/landonjohnson/LeetCodeSwift"
   },

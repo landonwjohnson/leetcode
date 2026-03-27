@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState, type JSX } from "react";
+import { CopyCodeButton } from "@/components/CopyCodeButton";
 
 type TwoSumStep = {
   index: number;
@@ -52,6 +53,10 @@ export function TwoSumVisualizer(): JSX.Element {
   const isDone = step >= steps.length;
   const foundPair = steps.find((item: TwoSumStep): boolean => item.matchIndex !== null) ?? null;
   const progress = steps.length > 0 ? Math.min((step / steps.length) * 100, 100) : 0;
+  const seenJson = useMemo(
+    (): string => JSON.stringify(current?.seen ?? {}, null, 2),
+    [current]
+  );
 
   return (
     <section className="section-card demo-card">
@@ -130,9 +135,15 @@ export function TwoSumVisualizer(): JSX.Element {
         </div>
         <div>
           <h3>Seen Map (value -&gt; index)</h3>
-          <pre className="code-block">
-            <code>{JSON.stringify(current?.seen ?? {}, null, 2)}</code>
-          </pre>
+          <div className="code-block-shell">
+            <div className="code-block-toolbar">
+              <span className="code-block-toolbar-lang">JSON</span>
+              <CopyCodeButton code={seenJson} />
+            </div>
+            <pre className="code-block code-block--nested">
+              <code>{seenJson}</code>
+            </pre>
+          </div>
         </div>
       </div>
     </section>

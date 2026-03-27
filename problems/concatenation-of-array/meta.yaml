@@ -1,0 +1,50 @@
+id: concatenation-of-array
+slug: concatenation-of-array
+title: Concatenation Of Array
+status: published
+difficulty: Easy
+questionTypeIds:
+  - range-substring-subarray
+patternIds:
+  - array-duplication
+featureIds:
+  - analytics-dashboards
+  - recommendation-systems
+careerPathIds:
+  - frontend-engineer
+  - ios-engineer
+  - full-stack-engineer
+industryIds:
+  - media-streaming
+  - consumer-social
+companyIds:
+  - apple
+  - meta
+roleIds:
+  - frontend-engineer
+  - ios-engineer
+tagIds:
+  - arrays
+  - array-manipulation
+summary: Duplicate array content in sequence to create a 2n output.
+whatItAsks: Return an array containing the original values followed by the same values again.
+recognitionClues:
+  - Output length is a direct multiple of input length.
+  - Result format is explicit and deterministic.
+  - A single pass append loop is sufficient.
+whyPatternFits: Direct array duplication keeps implementation predictable and linear.
+dailyUsefulness: Useful for cyclic UI lists and repeated fixture generation.
+interviewUsefulness: Reinforces array construction and complexity reasoning fundamentals.
+realWorldRelevance: Common in carousels, playback queues, and looped UI experiences.
+useCases:
+  - Build infinite carousel source data in UI layers.
+  - Repeat seed data for integration demo scenarios.
+  - Prepare looping playlist buffers.
+demoIdeas:
+  - Animate first and second append passes separately.
+  - Show output index mapping against input index.
+reusableHelpers:
+  - duplicateArray
+  - mapCircularIndex
+relatedProblemSlugs:
+  - two-sum

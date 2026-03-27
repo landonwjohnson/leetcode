@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import type { ReactElement } from "react";
+import { DemoIdeasPanel } from "@/components/DemoIdeasPanel";
+import { InteractiveConcatenationDemo } from "@/components/InteractiveConcatenationDemo";
+import { MetadataSidebar } from "@/components/MetadataSidebar";
+import { ProblemHero } from "@/components/ProblemHero";
+import { ProblemPromptBody } from "@/components/ProblemPromptBody";
+import { RecognitionCluesPanel } from "@/components/RecognitionCluesPanel";
 import { RelatedProblems } from "@/components/RelatedProblems";
-import { SolutionTabs } from "@/components/SolutionTabs";
+import { SnippetTabs } from "@/components/SnippetTabs";
 import { UseCaseExample } from "@/components/UseCaseExample";
-import { VisualAlgorithmDemo } from "@/components/VisualAlgorithmDemo";
-import { getAllProblems, getProblemBySlug, getRelatedProblems } from "@/lib/content";
+import { getAllProblems, getProblemBySlug, getRelatedProblems, resolveLabels } from "@/lib/content";
 import { absoluteUrl, withBasePath } from "@/lib/seo-config";
 
 type Params = { slug: string };
@@ -23,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   }
 
   const canonicalPath = `/problems/${problem.slug}`;
-  const description = `${problem.summary} Solve ${problem.title} with ${problem.languages.swift ? "Swift" : "multiple languages"} and practical usage examples.`;
+  const description = `${problem.summary} Solve ${problem.title} with code snippets and practical engineering context.`;
 
   return {
     title: problem.title,
@@ -53,17 +58,22 @@ export default async function ProblemDetailPage({ params }: { params: Promise<Pa
   }
 
   const related = getRelatedProblems(problem.slug);
+  const questionTypes = resolveLabels(problem.questionTypeIds, "questionType");
+  const patterns = resolveLabels(problem.patternIds, "pattern");
+  const features = resolveLabels(problem.featureIds, "feature");
+  const careerPaths = resolveLabels(problem.careerPathIds, "careerPath");
+  const companies = resolveLabels(problem.companyIds, "company");
+  const roles = resolveLabels(problem.roleIds, "role");
+  const industries = resolveLabels(problem.industryIds, "industry");
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     headline: problem.title,
     description: problem.summary,
-    keywords: problem.tags.join(", "),
-    about: problem.tags,
-    inLanguage: Object.entries(problem.languages)
-      .filter(([, code]): boolean => typeof code === "string" && code.length > 0)
-      .map(([language]) => language),
+    keywords: [...questionTypes, ...patterns].join(", "),
+    about: [...questionTypes, ...patterns],
+    inLanguage: problem.availableLanguages,
     url: absoluteUrl(`/problems/${problem.slug}`)
   };
 
@@ -100,31 +110,45 @@ export default async function ProblemDetailPage({ params }: { params: Promise<Pa
       <Script id={`problem-breadcrumb-${problem.slug}`} type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </Script>
-      <section className="hero">
-        <h1>{problem.title}</h1>
-        <p>{problem.summary}</p>
-        <div className="meta-row">
-          <span className="pill">{problem.difficulty}</span>
-          <span className="pill">Time {problem.complexity.time}</span>
-          <span className="pill">Space {problem.complexity.space}</span>
-          {problem.tags.map((tag) => (
-            <span key={tag} className="pill">
-              {tag}
-            </span>
-          ))}
-        </div>
+      <ProblemHero problem={problem} questionTypes={questionTypes} patterns={patterns} />
+
+      <section className="section-card problem-asking-section">
+        <h2>What This Problem Is Asking</h2>
+        <p className="problem-asking-label">In one sentence</p>
+        <p className="problem-asking-summary">{problem.whatItAsks}</p>
+        <p className="problem-asking-label">Full problem statement</p>
+        <ProblemPromptBody
+          prompt={problem.prompt}
+          fallback="Prompt will appear when prompt.md exists for this problem."
+        />
       </section>
 
+      <RecognitionCluesPanel clues={problem.recognitionClues} />
       <section className="section-card">
-        <h2>Problem Prompt</h2>
-        <pre className="code-block">
-          <code>{problem.prompt || "Prompt will appear when prompt.md exists for this problem."}</code>
-        </pre>
+        <h2>Why This Pattern Fits</h2>
+        <p>{problem.whyPatternFits}</p>
+        <p>
+          <strong>Daily usefulness:</strong> {problem.dailyUsefulness}
+        </p>
+        <p>
+          <strong>Interview usefulness:</strong> {problem.interviewUsefulness}
+        </p>
+        <p>
+          <strong>Real-world relevance:</strong> {problem.realWorldRelevance}
+        </p>
       </section>
-
-      <SolutionTabs languages={problem.languages} />
+      <SnippetTabs problem={problem} />
+      {problem.slug === "concatenation-of-array" ? <InteractiveConcatenationDemo /> : null}
       <UseCaseExample points={problem.useCases} />
-      <VisualAlgorithmDemo slug={problem.slug} />
+      <DemoIdeasPanel demoIdeas={problem.demoIdeas} />
+      <MetadataSidebar
+        features={features}
+        careerPaths={careerPaths}
+        companies={companies}
+        roles={roles}
+        industries={industries}
+        reusableHelpers={problem.reusableHelpers}
+      />
       <RelatedProblems related={related} />
     </>
   );

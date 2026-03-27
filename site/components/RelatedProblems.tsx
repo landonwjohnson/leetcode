@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { JSX } from "react";
-import type { ProblemContent } from "@/lib/content";
+import type { ProblemRecord } from "@/types/content";
 
 type Props = {
-  related: ProblemContent[];
+  related: ProblemRecord[];
 };
 
 export function RelatedProblems({ related }: Props): JSX.Element | null {
@@ -15,7 +15,7 @@ export function RelatedProblems({ related }: Props): JSX.Element | null {
     <section className="section-card">
       <h2>Related Problems</h2>
       <div className="grid">
-        {related.map((problem: ProblemContent): JSX.Element => (
+        {related.map((problem: ProblemRecord): JSX.Element => (
           <Link key={problem.slug} href={`/problems/${problem.slug}`} className="problem-card">
             <strong>{problem.title}</strong>
           </Link>

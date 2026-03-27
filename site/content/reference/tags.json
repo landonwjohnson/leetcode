@@ -1,0 +1,44 @@
+[
+  {
+    "id": "arrays",
+    "slug": "arrays",
+    "label": "Arrays",
+    "description": "Sequence data operations and array transformations."
+  },
+  {
+    "id": "hash-map",
+    "slug": "hash-map",
+    "label": "Hash Map",
+    "description": "Map-based lookups and key grouping."
+  },
+  {
+    "id": "array-manipulation",
+    "slug": "array-manipulation",
+    "label": "Array Manipulation",
+    "description": "Reshaping and combining array data."
+  },
+  {
+    "id": "two-sum",
+    "slug": "two-sum",
+    "label": "Two Sum",
+    "description": "Pair matching with complementary lookup."
+  },
+  {
+    "id": "strings",
+    "slug": "strings",
+    "label": "Strings",
+    "description": "Prefix/suffix and text transformation operations."
+  },
+  {
+    "id": "trie",
+    "slug": "trie",
+    "label": "Trie",
+    "description": "Prefix-tree modeling for autocomplete and dictionary search."
+  },
+  {
+    "id": "sorting",
+    "slug": "sorting",
+    "label": "Sorting",
+    "description": "Ordering data for deterministic retrieval and ranking."
+  }
+]
