@@ -1,0 +1,39 @@
+{
+  "name": "algorithm-snippets",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node scripts/generate-content.mjs && WATCHPACK_POLLING=true next dev -H 127.0.0.1 -p 3005",
+    "dev:3000": "node scripts/generate-content.mjs && WATCHPACK_POLLING=true next dev -H 127.0.0.1 -p 3000",
+    "dev:e2e": "node scripts/generate-content.mjs && WATCHPACK_POLLING=true next dev -H 127.0.0.1 -p 3010",
+    "start:e2e": "node scripts/generate-content.mjs && next build && python3 -m http.server 3010 --bind 127.0.0.1 -d out",
+    "build": "node scripts/generate-content.mjs && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/content-generation.test.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "generate-content": "node scripts/generate-content.mjs",
+    "validate-seo": "node scripts/check-metadata.mjs && node scripts/check-internal-links.mjs && node scripts/check-route-seo.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^15.0.0",
+    "nextra": "^3.0.0",
+    "nextra-theme-docs": "^3.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-syntax-highlighter": "^16.1.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "typescript": "^5.0.0"
+  }
+}

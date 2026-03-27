@@ -1,8 +1,8 @@
 
-// ProjectName: leetcode
+// Project: Algorithms
 // FilePath: problems/concatenation-of-array/languages/c++/solution.cc
 // LastEdited: 2026-03-26T00:00:00Z
-// Editor: Cursor Assistant
+// Editor: Assistant
 
 #include <vector>
 

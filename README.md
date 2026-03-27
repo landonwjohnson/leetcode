@@ -44,6 +44,42 @@ Run tests for a problem:
 ./scripts/test.sh concatenation-of-array
 ```
 
+## SEO Docs Website
+
+A Next.js + Nextra website is available under `site/` and is generated from the canonical `problems/` folder.
+
+From the repository root:
+
+```bash
+cd site
+npm install
+npm run generate-content
+npm run dev
+```
+
+By default the docs site runs at `http://127.0.0.1:3005` to avoid local port/watcher issues.
+If you specifically want port 3000, run `npm run dev:3000`.
+
+Useful commands in `site/`:
+
+- `npm run build` - Generate content and build the production website.
+- `npm run validate-seo` - Validate metadata, canonical wiring, and crawl route coverage.
+- `npm test` - Run content-shape tests for generated problem pages.
+- `npm run dev:3000` - Start local dev server on `127.0.0.1:3000`.
+
+GitHub Pages SEO env vars:
+
+- `NEXT_PUBLIC_SITE_ORIGIN` (example: `https://yourname.github.io`)
+- `NEXT_PUBLIC_REPO_NAME` (example: `LeetCodeSwift`)
+- Optional: `NEXT_PUBLIC_BASE_PATH` (defaults to `/<repo-name>`)
+
+The website includes:
+
+- SEO routes for each problem (`/problems/<slug>`).
+- Language and tag index pages for discovery.
+- Interactive examples for supported problems.
+- Sitemap, robots, and `llms.txt` routes for crawler indexing.
+
 ## Why this repo
 
 - Build and compare core algorithm patterns from LeetCode.
