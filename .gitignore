@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Dependencies (any depth)
+node_modules/
+
+# Next.js / static export (site app)
+site/.next/
+site/out/
+
+# Local env (keep .env.example committable)
+site/.env*.local
+*.log
+
+# Playwright (under site/ when run locally)
+site/test-results/
+site/playwright-report/
+site/blob-report/

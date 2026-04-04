@@ -6,7 +6,10 @@ import nextra from "nextra";
 const packageDir = path.dirname(fileURLToPath(import.meta.url));
 
 const repoName = process.env.NEXT_PUBLIC_REPO_NAME ?? "LeetCodeSwift";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? `/${repoName}`;
+/** GitHub Pages project sites use /<repo>; Vercel serves from /. */
+const isVercel = Boolean(process.env.VERCEL);
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH ?? (isVercel ? "/" : `/${repoName}`);
 const normalizedBasePath = basePath === "/" ? "" : basePath;
 const shouldUseBasePath = process.env.NODE_ENV === "production";
 const effectiveBasePath = shouldUseBasePath ? normalizedBasePath : "";

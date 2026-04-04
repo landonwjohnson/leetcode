@@ -48,6 +48,18 @@ Run tests for a problem:
 
 A Next.js + Nextra website is available under `site/` and is generated from the canonical `problems/` folder.
 
+### Git: avoid committing dependencies and build output
+
+Do not commit `node_modules/`, `site/.next/`, `site/out/`, or other generated artifacts. The root [`.gitignore`](.gitignore) ignores them; prefer `git add <paths>` or `git add -p` instead of blind `git add -A` from the repo root.
+
+Install the shared pre-commit guard once per clone (blocks staging those paths and any file larger than 10 MiB):
+
+```bash
+./scripts/git/install-hooks.sh
+```
+
+CI runs [`.github/workflows/no-junk-in-diff.yml`](.github/workflows/no-junk-in-diff.yml) on pull requests for the same checks.
+
 From the repository root:
 
 ```bash

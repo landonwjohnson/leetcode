@@ -1,24 +1,17 @@
 {
   "byCareerPath": [
     {
-      "id": "full-stack-engineer",
-      "slug": "full-stack-engineer",
-      "label": "Full Stack Engineer",
-      "description": "Owns product work across client, server, and data boundaries.",
-      "problemSlugs": [
-        "add-two-numbers",
-        "concatenation-of-array",
-        "search-suggestions-system",
-        "two-sum"
-      ]
-    },
-    {
       "id": "backend-engineer",
       "slug": "backend-engineer",
       "label": "Backend Engineer",
       "description": "Builds APIs, services, and data-intensive systems.",
       "problemSlugs": [
         "add-two-numbers",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
         "search-suggestions-system",
         "two-sum"
       ]
@@ -29,6 +22,23 @@
       "label": "Frontend Engineer",
       "description": "Builds UI-heavy products and interaction-driven experiences.",
       "problemSlugs": [
+        "concatenation-of-array",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
+      "id": "full-stack-engineer",
+      "slug": "full-stack-engineer",
+      "label": "Full Stack Engineer",
+      "description": "Owns product work across client, server, and data boundaries.",
+      "problemSlugs": [
+        "add-two-numbers",
         "concatenation-of-array",
         "search-suggestions-system",
         "two-sum"
@@ -51,6 +61,11 @@
       "label": "Lookup / Frequency / Matching",
       "description": "Lookup-heavy questions solved with maps, sets, or counters.",
       "problemSlugs": [
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
         "search-suggestions-system",
         "two-sum"
       ]
@@ -76,6 +91,21 @@
   ],
   "byFeature": [
     {
+      "id": "search-suggestions",
+      "slug": "search-suggestions",
+      "label": "Search Suggestions",
+      "description": "Prefix matching and intent hinting in search UX.",
+      "problemSlugs": [
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
       "id": "analytics-dashboards",
       "slug": "analytics-dashboards",
       "label": "Analytics Dashboards",
@@ -83,16 +113,6 @@
       "problemSlugs": [
         "add-two-numbers",
         "concatenation-of-array"
-      ]
-    },
-    {
-      "id": "search-suggestions",
-      "slug": "search-suggestions",
-      "label": "Search Suggestions",
-      "description": "Prefix matching and intent hinting in search UX.",
-      "problemSlugs": [
-        "search-suggestions-system",
-        "two-sum"
       ]
     },
     {
@@ -107,21 +127,26 @@
   ],
   "byPattern": [
     {
+      "id": "hash-map",
+      "slug": "hash-map",
+      "label": "Hash Map",
+      "description": "Constant-time lookup pattern using key-value storage.",
+      "problemSlugs": [
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
+        "two-sum"
+      ]
+    },
+    {
       "id": "array-duplication",
       "slug": "array-duplication",
       "label": "Array Duplication",
       "description": "Concatenating or repeating sequence data.",
       "problemSlugs": [
         "concatenation-of-array"
-      ]
-    },
-    {
-      "id": "hash-map",
-      "slug": "hash-map",
-      "label": "Hash Map",
-      "description": "Constant-time lookup pattern using key-value storage.",
-      "problemSlugs": [
-        "two-sum"
       ]
     },
     {
@@ -145,6 +170,21 @@
   ],
   "byCompany": [
     {
+      "id": "google",
+      "slug": "google",
+      "label": "Google",
+      "description": "Search, infrastructure, and data-focused systems.",
+      "problemSlugs": [
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
+        "search-suggestions-system",
+        "two-sum"
+      ]
+    },
+    {
       "id": "meta",
       "slug": "meta",
       "label": "Meta",
@@ -166,16 +206,6 @@
       ]
     },
     {
-      "id": "google",
-      "slug": "google",
-      "label": "Google",
-      "description": "Search, infrastructure, and data-focused systems.",
-      "problemSlugs": [
-        "search-suggestions-system",
-        "two-sum"
-      ]
-    },
-    {
       "id": "apple",
       "slug": "apple",
       "label": "Apple",
@@ -193,6 +223,11 @@
       "description": "Builds APIs and backend data workflows.",
       "problemSlugs": [
         "add-two-numbers",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
         "search-suggestions-system",
         "two-sum"
       ]
@@ -204,6 +239,11 @@
       "description": "Builds UI architecture and user-facing interactions.",
       "problemSlugs": [
         "concatenation-of-array",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
         "search-suggestions-system",
         "two-sum"
       ]
@@ -226,6 +266,11 @@
       "description": "Searchable docs, indexing, and tooling workflows.",
       "problemSlugs": [
         "add-two-numbers",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
         "search-suggestions-system",
         "two-sum"
       ]
@@ -268,6 +313,11 @@
       "problemSlugs": [
         "add-two-numbers",
         "concatenation-of-array",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays",
+        "palindrome-number",
+        "remove-deplicates-from-sorted-array",
         "two-sum"
       ]
     },

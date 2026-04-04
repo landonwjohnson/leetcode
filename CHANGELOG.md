@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### Changed
+- [`roadmap.md`](roadmap.md): roadmap tables link each **LeetCode Problem** (and AI **LeetCode Anchors**) to `https://leetcode.com/problems/<slug>/`.
 - Homepage cards match wireframe flow: career/problem mini-cards use a fixed icon slot and title + mono count only (description on `title` tooltip); feature cards use top row icon + `ALGOS` badge then left-aligned copy; list rows add useful accent bar, pattern `N USES`, and recent `+` chip ([`site/components/home/*`](site/components/home/), [`site/app/globals.css`](site/app/globals.css)).
 - [`site/next.config.mjs`](site/next.config.mjs) sets `outputFileTracingRoot` to this package so Next does not treat a parent-folder lockfile as the repo root (fixes flaky dev manifests / missing chunk paths).
 - [`site/pages/_app.jsx`](site/pages/_app.jsx) uses relative imports for `globals.css` and `lib/fonts` instead of `@/` so resolution stays tied to `site/` when aliases mis-target.
@@ -16,6 +17,9 @@ All notable changes to this project will be documented in this file.
 - Code blocks for solution snippets and interactive demos include a **Copy** control (`site/components/CopyCodeButton.tsx`, `site/components/SnippetTabs.tsx`, `site/components/InteractiveConcatenationDemo.tsx`, `site/components/visualizers/TwoSumVisualizer.tsx`, `site/app/globals.css`).
 
 ### Added
+- Pre-commit and PR guards against committing `node_modules/`, Next build/export output, `.DS_Store`, and blobs over 10 MiB ([`scripts/git/pre-commit-blocklist.sh`](scripts/git/pre-commit-blocklist.sh), [`scripts/git/install-hooks.sh`](scripts/git/install-hooks.sh), [`scripts/git/check-pr-no-junk.sh`](scripts/git/check-pr-no-junk.sh), [`.github/workflows/no-junk-in-diff.yml`](.github/workflows/no-junk-in-diff.yml)); [README](README.md) documents `./scripts/git/install-hooks.sh`.
+- Root [`.gitignore`](.gitignore) ignores `.DS_Store`, `node_modules/`, [`site/.next/`](site/.next/), [`site/out/`](site/out/), `site/.env*.local`, `*.log`, and Playwright output under `site/` (`test-results/`, `playwright-report/`, `blob-report/`).
+- React demo for longest substring without repeating characters ([`problems/longest-substring-without-repeating-characters/examples/react/LongestSubstringWithoutRepeatingDemo.component.tsx`](problems/longest-substring-without-repeating-characters/examples/react/LongestSubstringWithoutRepeatingDemo.component.tsx)) (sliding-window helper + `useMemo`-backed input UI).
 - Hero search field cycles typewriter-style placeholder suggestions until focus or typing (`site/components/SearchBarInput.tsx`, `site/components/SearchBar.tsx`, `site/components/home/HeroSearchSection.tsx`).
 - `prompt.md` for every problem under `problems/*` (including `add-two-numbers`, `concatenation-of-array`, `search-suggestions-system`; `two-sum` already had one).
 - `meta.yaml` for `problems/add-two-numbers/` so taxonomy and copy match the linked-list addition prompt.

@@ -89,6 +89,211 @@
     "searchableText": "concatenation of array duplicate array content in sequence to create a 2n output. range / substring / subarray array duplication analytics dashboards recommendation systems frontend engineer ios engineer full stack engineer apple meta frontend engineer ios engineer media streaming consumer social arrays array manipulation build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. output length is a direct multiple of input length. result format is explicit and deterministic. a single pass append loop is sufficient."
   },
   {
+    "slug": "longest-palindromic-substring",
+    "title": "Longest Palindromic Substring",
+    "summary": "Solution walkthrough for longest palindromic substring with code and practical use cases.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Hash Map"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools"
+    ],
+    "tags": [
+      "Arrays"
+    ],
+    "useCases": [
+      "Resolve complementary value lookups in near real-time APIs.",
+      "Detect matching pairs in transactional or telemetry streams.",
+      "Use hash-map pairing logic in data validation pipelines."
+    ],
+    "recognitionClues": [
+      "You need fast lookup while iterating once.",
+      "You are asked for indices, pairs, or direct matches."
+    ],
+    "searchableText": "longest palindromic substring solution walkthrough for longest palindromic substring with code and practical use cases. lookup / frequency / matching hash map search suggestions frontend engineer backend engineer google frontend engineer backend engineer developer tools arrays resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches."
+  },
+  {
+    "slug": "longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "summary": "Solution walkthrough for longest substring without repeating characters with code and practical use cases.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Hash Map"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools"
+    ],
+    "tags": [
+      "Arrays"
+    ],
+    "useCases": [
+      "Resolve complementary value lookups in near real-time APIs.",
+      "Detect matching pairs in transactional or telemetry streams.",
+      "Use hash-map pairing logic in data validation pipelines."
+    ],
+    "recognitionClues": [
+      "You need fast lookup while iterating once.",
+      "You are asked for indices, pairs, or direct matches."
+    ],
+    "searchableText": "longest substring without repeating characters solution walkthrough for longest substring without repeating characters with code and practical use cases. lookup / frequency / matching hash map search suggestions frontend engineer backend engineer google frontend engineer backend engineer developer tools arrays resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches."
+  },
+  {
+    "slug": "median-of-two-sorted-arrays",
+    "title": "Median Of Two Sorted Arrays",
+    "summary": "Solution walkthrough for median of two sorted arrays with code and practical use cases.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Hash Map"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools"
+    ],
+    "tags": [
+      "Arrays"
+    ],
+    "useCases": [
+      "Resolve complementary value lookups in near real-time APIs.",
+      "Detect matching pairs in transactional or telemetry streams.",
+      "Use hash-map pairing logic in data validation pipelines."
+    ],
+    "recognitionClues": [
+      "You need fast lookup while iterating once.",
+      "You are asked for indices, pairs, or direct matches."
+    ],
+    "searchableText": "median of two sorted arrays solution walkthrough for median of two sorted arrays with code and practical use cases. lookup / frequency / matching hash map search suggestions frontend engineer backend engineer google frontend engineer backend engineer developer tools arrays resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches."
+  },
+  {
+    "slug": "palindrome-number",
+    "title": "Palindrome Number",
+    "summary": "Solution walkthrough for palindrome number with code and practical use cases.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Hash Map"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools"
+    ],
+    "tags": [
+      "Arrays"
+    ],
+    "useCases": [
+      "Resolve complementary value lookups in near real-time APIs.",
+      "Detect matching pairs in transactional or telemetry streams.",
+      "Use hash-map pairing logic in data validation pipelines."
+    ],
+    "recognitionClues": [
+      "You need fast lookup while iterating once.",
+      "You are asked for indices, pairs, or direct matches."
+    ],
+    "searchableText": "palindrome number solution walkthrough for palindrome number with code and practical use cases. lookup / frequency / matching hash map search suggestions frontend engineer backend engineer google frontend engineer backend engineer developer tools arrays resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches."
+  },
+  {
+    "slug": "remove-deplicates-from-sorted-array",
+    "title": "Remove Deplicates From Sorted Array",
+    "summary": "Solution walkthrough for remove deplicates from sorted array with code and practical use cases.",
+    "questionTypes": [
+      "Lookup / Frequency / Matching"
+    ],
+    "patterns": [
+      "Hash Map"
+    ],
+    "features": [
+      "Search Suggestions"
+    ],
+    "careerPaths": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "roles": [
+      "Frontend Engineer",
+      "Backend Engineer"
+    ],
+    "industries": [
+      "Developer Tools"
+    ],
+    "tags": [
+      "Arrays"
+    ],
+    "useCases": [
+      "Resolve complementary value lookups in near real-time APIs.",
+      "Detect matching pairs in transactional or telemetry streams.",
+      "Use hash-map pairing logic in data validation pipelines."
+    ],
+    "recognitionClues": [
+      "You need fast lookup while iterating once.",
+      "You are asked for indices, pairs, or direct matches."
+    ],
+    "searchableText": "remove deplicates from sorted array solution walkthrough for remove deplicates from sorted array with code and practical use cases. lookup / frequency / matching hash map search suggestions frontend engineer backend engineer google frontend engineer backend engineer developer tools arrays resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches."
+  },
+  {
     "slug": "search-suggestions-system",
     "title": "Search Suggestions System",
     "summary": "Build incremental typeahead suggestions as a user types.",

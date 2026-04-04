@@ -493,6 +493,53 @@ function buildSearchDocs(problems, maps) {
   });
 }
 
+function writeLlmsTxt(problems) {
+  const siteName = "AlgoRef";
+  const siteDescription =
+    "Interactive algorithm reference: patterns, real-world features, and multi-language solutions.";
+  const defaultOrigin =
+    process.env.VERCEL && process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://landonjohnson.github.io";
+  const siteOrigin = (process.env.NEXT_PUBLIC_SITE_ORIGIN ?? defaultOrigin).replace(/\/+$/, "");
+  const repoName = process.env.NEXT_PUBLIC_REPO_NAME ?? "LeetCodeSwift";
+  const isVercel = Boolean(process.env.VERCEL);
+  const repoBasePath =
+    process.env.NEXT_PUBLIC_BASE_PATH ?? (isVercel ? "/" : `/${repoName}`);
+  const shouldUseBasePath = process.env.NODE_ENV === "production";
+  const normalizedBasePath = shouldUseBasePath
+    ? repoBasePath === "/"
+      ? ""
+      : repoBasePath.replace(/\/+$/, "")
+    : "";
+  function withBasePath(pathname) {
+    const cleanPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
+    return normalizedBasePath ? `${normalizedBasePath}${cleanPath}` : cleanPath;
+  }
+  function absoluteUrl(pathname) {
+    return `${siteOrigin}${withBasePath(pathname)}`;
+  }
+
+  const lines = [
+    `# ${siteName}`,
+    "",
+    siteDescription,
+    "",
+    "## Key Routes",
+    `- Home: ${absoluteUrl("/")}`,
+    `- Problems: ${absoluteUrl("/problems")}`,
+    `- Learning Paths: ${absoluteUrl("/learning-paths")}`,
+    "",
+    "## Problem Pages"
+  ];
+  for (const problem of problems) {
+    lines.push(`- ${problem.title}: ${absoluteUrl(`/problems/${problem.slug}`)}`);
+  }
+  const publicDir = path.join(process.cwd(), "public");
+  fs.mkdirSync(publicDir, { recursive: true });
+  fs.writeFileSync(path.join(publicDir, "llms.txt"), `${lines.join("\n")}\n`, "utf8");
+}
+
 function main() {
   const slugs = fs
     .readdirSync(problemsRoot, { withFileTypes: true })
@@ -543,6 +590,7 @@ function main() {
   fs.writeFileSync(searchIndexFile, `${JSON.stringify(searchIndex, null, 2)}\n`, "utf8");
   fs.writeFileSync(snippetsFile, `${JSON.stringify(snippets, null, 2)}\n`, "utf8");
   fs.writeFileSync(snippetIndexFile, `${JSON.stringify(snippetIndex, null, 2)}\n`, "utf8");
+  writeLlmsTxt(problems);
 }
 
 main();

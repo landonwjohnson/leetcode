@@ -1,0 +1,16 @@
+name: No junk in diff
+
+on:
+  pull_request:
+
+jobs:
+  check-forbidden-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Block node_modules, Next output, and huge files in PR range
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
+        run: bash scripts/git/check-pr-no-junk.sh
