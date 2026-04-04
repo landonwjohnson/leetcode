@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### Changed
+- [`roadmap.md`](roadmap.md): roadmap tables link each **LeetCode Problem** (and AI **LeetCode Anchors**) to `https://leetcode.com/problems/<slug>/`.
 - Homepage cards match wireframe flow: career/problem mini-cards use a fixed icon slot and title + mono count only (description on `title` tooltip); feature cards use top row icon + `ALGOS` badge then left-aligned copy; list rows add useful accent bar, pattern `N USES`, and recent `+` chip ([`site/components/home/*`](site/components/home/), [`site/app/globals.css`](site/app/globals.css)).
 - [`site/next.config.mjs`](site/next.config.mjs) sets `outputFileTracingRoot` to this package so Next does not treat a parent-folder lockfile as the repo root (fixes flaky dev manifests / missing chunk paths).
 - [`site/pages/_app.jsx`](site/pages/_app.jsx) uses relative imports for `globals.css` and `lib/fonts` instead of `@/` so resolution stays tied to `site/` when aliases mis-target.
@@ -16,7 +17,8 @@ All notable changes to this project will be documented in this file.
 - Code blocks for solution snippets and interactive demos include a **Copy** control (`site/components/CopyCodeButton.tsx`, `site/components/SnippetTabs.tsx`, `site/components/InteractiveConcatenationDemo.tsx`, `site/components/visualizers/TwoSumVisualizer.tsx`, `site/app/globals.css`).
 
 ### Added
-- Root [`.gitignore`](.gitignore) ignores [`site/.next/`](site/.next/) so Next.js dev/build artifacts are not committed.
+- Root [`.gitignore`](.gitignore) ignores `.DS_Store`, `node_modules/`, [`site/.next/`](site/.next/), and [`site/out/`](site/out/) (static export).
+- React demo for longest substring without repeating characters ([`problems/longest-substring-without-repeating-characters/examples/react/LongestSubstringWithoutRepeatingDemo.component.tsx`](problems/longest-substring-without-repeating-characters/examples/react/LongestSubstringWithoutRepeatingDemo.component.tsx)) (sliding-window helper + `useMemo`-backed input UI).
 - Hero search field cycles typewriter-style placeholder suggestions until focus or typing (`site/components/SearchBarInput.tsx`, `site/components/SearchBar.tsx`, `site/components/home/HeroSearchSection.tsx`).
 - `prompt.md` for every problem under `problems/*` (including `add-two-numbers`, `concatenation-of-array`, `search-suggestions-system`; `two-sum` already had one).
 - `meta.yaml` for `problems/add-two-numbers/` so taxonomy and copy match the linked-list addition prompt.

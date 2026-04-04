@@ -1,2 +1,9 @@
-# Next.js build output (site app)
+# macOS
+.DS_Store
+
+# Dependencies (any depth)
+node_modules/
+
+# Next.js / static export (site app)
 site/.next/
+site/out/

@@ -10,9 +10,14 @@ const files = [
   "app/languages/[language]/page.tsx",
   "app/learning-paths/page.tsx",
   "app/sitemap.ts",
-  "app/robots.ts",
-  "app/llms.txt/route.ts"
+  "app/robots.ts"
 ];
+
+const generateScriptPath = path.join(process.cwd(), "scripts", "generate-content.mjs");
+const generateScript = fs.readFileSync(generateScriptPath, "utf8");
+if (!generateScript.includes("writeLlmsTxt") || !generateScript.includes("llms.txt")) {
+  throw new Error("generate-content.mjs must define writeLlmsTxt and emit public/llms.txt (static export).");
+}
 
 for (const relativePath of files) {
   const filePath = path.join(process.cwd(), relativePath);

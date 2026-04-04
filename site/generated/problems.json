@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T18:07:58.703Z",
+  "generatedAt": "2026-04-03T13:58:09.056Z",
   "problems": [
     {
       "id": "add-two-numbers",
@@ -71,7 +71,7 @@
         "cpp"
       ],
       "readingTimeMinutes": 1,
-      "updatedAt": "2026-03-27T18:07:58.689Z",
+      "updatedAt": "2026-04-03T13:58:08.386Z",
       "searchText": "add two numbers sum two integers represented as reversed digit linked lists and return the result as a linked list. walk both lists from the least significant digit, propagate carry, and build the result list. two sequences are consumed in parallel with shared carry state. lists may differ in length; a final carry can add an extra digit. each step only needs the current nodes and the running carry. combine chunked numeric payloads where full conversion to a scalar is unsafe or undesirable. simulate addition in finance or crypto tooling that uses digit or limb sequences. build teaching demos of arbitrary-precision arithmetic from simple list nodes. step through each pair of digits with an animated carry chip. toggle unequal-length lists to show how the shorter stream is “zero” after it ends. adddigitswithcarry arrays two-pointers pair-comparison"
     },
     {
@@ -151,8 +151,373 @@
         "typescript"
       ],
       "readingTimeMinutes": 1,
-      "updatedAt": "2026-03-27T18:07:58.694Z",
+      "updatedAt": "2026-04-03T13:58:08.474Z",
       "searchText": "concatenation of array duplicate array content in sequence to create a 2n output. return an array containing the original values followed by the same values again. output length is a direct multiple of input length. result format is explicit and deterministic. a single pass append loop is sufficient. build infinite carousel source data in ui layers. repeat seed data for integration demo scenarios. prepare looping playlist buffers. animate first and second append passes separately. show output index mapping against input index. duplicatearray mapcircularindex arrays array-manipulation array-duplication range-substring-subarray"
+    },
+    {
+      "id": "longest-palindromic-substring",
+      "slug": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "hash-map"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "industryIds": [
+        "developer-tools"
+      ],
+      "companyIds": [
+        "google"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays"
+      ],
+      "summary": "Solution walkthrough for longest palindromic substring with code and practical use cases.",
+      "whatItAsks": "Identify the core operation required by the prompt and produce the expected output efficiently.",
+      "recognitionClues": [
+        "You need fast lookup while iterating once.",
+        "You are asked for indices, pairs, or direct matches."
+      ],
+      "whyPatternFits": "This pattern minimizes repeated scanning and keeps lookup decisions close to the traversal.",
+      "dailyUsefulness": "Useful in data validation, filtering, and UI state transformations encountered in daily product work.",
+      "interviewUsefulness": "This pattern appears frequently in screening rounds due to its clarity and optimization tradeoffs.",
+      "realWorldRelevance": "Maps to production concerns like deduplication, lookup acceleration, and ranking support.",
+      "useCases": [
+        "Resolve complementary value lookups in near real-time APIs.",
+        "Detect matching pairs in transactional or telemetry streams.",
+        "Use hash-map pairing logic in data validation pipelines."
+      ],
+      "demoIdeas": [
+        "Animate lookup table growth while scanning inputs.",
+        "Visualize when candidate matches become valid outputs."
+      ],
+      "reusableHelpers": [
+        "buildFrequencyMap",
+        "findComplementIndex"
+      ],
+      "relatedProblemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "longest-substring-without-repeating-characters",
+        "median-of-two-sorted-arrays"
+      ],
+      "prompt": "",
+      "content": "",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "",
+        "typescript": ""
+      },
+      "availableLanguages": [],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-04-03T13:58:08.527Z",
+      "searchText": "longest palindromic substring solution walkthrough for longest palindromic substring with code and practical use cases. identify the core operation required by the prompt and produce the expected output efficiently. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches. resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. animate lookup table growth while scanning inputs. visualize when candidate matches become valid outputs. buildfrequencymap findcomplementindex arrays hash-map lookup-frequency-matching"
+    },
+    {
+      "id": "longest-substring-without-repeating-characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "hash-map"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "industryIds": [
+        "developer-tools"
+      ],
+      "companyIds": [
+        "google"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays"
+      ],
+      "summary": "Solution walkthrough for longest substring without repeating characters with code and practical use cases.",
+      "whatItAsks": "Identify the core operation required by the prompt and produce the expected output efficiently.",
+      "recognitionClues": [
+        "You need fast lookup while iterating once.",
+        "You are asked for indices, pairs, or direct matches."
+      ],
+      "whyPatternFits": "This pattern minimizes repeated scanning and keeps lookup decisions close to the traversal.",
+      "dailyUsefulness": "Useful in data validation, filtering, and UI state transformations encountered in daily product work.",
+      "interviewUsefulness": "This pattern appears frequently in screening rounds due to its clarity and optimization tradeoffs.",
+      "realWorldRelevance": "Maps to production concerns like deduplication, lookup acceleration, and ranking support.",
+      "useCases": [
+        "Resolve complementary value lookups in near real-time APIs.",
+        "Detect matching pairs in transactional or telemetry streams.",
+        "Use hash-map pairing logic in data validation pipelines."
+      ],
+      "demoIdeas": [
+        "Animate lookup table growth while scanning inputs.",
+        "Visualize when candidate matches become valid outputs."
+      ],
+      "reusableHelpers": [
+        "buildFrequencyMap",
+        "findComplementIndex"
+      ],
+      "relatedProblemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "longest-palindromic-substring",
+        "median-of-two-sorted-arrays"
+      ],
+      "prompt": "",
+      "content": "",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "",
+        "typescript": ""
+      },
+      "availableLanguages": [],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-04-03T13:58:08.528Z",
+      "searchText": "longest substring without repeating characters solution walkthrough for longest substring without repeating characters with code and practical use cases. identify the core operation required by the prompt and produce the expected output efficiently. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches. resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. animate lookup table growth while scanning inputs. visualize when candidate matches become valid outputs. buildfrequencymap findcomplementindex arrays hash-map lookup-frequency-matching"
+    },
+    {
+      "id": "median-of-two-sorted-arrays",
+      "slug": "median-of-two-sorted-arrays",
+      "title": "Median Of Two Sorted Arrays",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "hash-map"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "industryIds": [
+        "developer-tools"
+      ],
+      "companyIds": [
+        "google"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays"
+      ],
+      "summary": "Solution walkthrough for median of two sorted arrays with code and practical use cases.",
+      "whatItAsks": "Identify the core operation required by the prompt and produce the expected output efficiently.",
+      "recognitionClues": [
+        "You need fast lookup while iterating once.",
+        "You are asked for indices, pairs, or direct matches."
+      ],
+      "whyPatternFits": "This pattern minimizes repeated scanning and keeps lookup decisions close to the traversal.",
+      "dailyUsefulness": "Useful in data validation, filtering, and UI state transformations encountered in daily product work.",
+      "interviewUsefulness": "This pattern appears frequently in screening rounds due to its clarity and optimization tradeoffs.",
+      "realWorldRelevance": "Maps to production concerns like deduplication, lookup acceleration, and ranking support.",
+      "useCases": [
+        "Resolve complementary value lookups in near real-time APIs.",
+        "Detect matching pairs in transactional or telemetry streams.",
+        "Use hash-map pairing logic in data validation pipelines."
+      ],
+      "demoIdeas": [
+        "Animate lookup table growth while scanning inputs.",
+        "Visualize when candidate matches become valid outputs."
+      ],
+      "reusableHelpers": [
+        "buildFrequencyMap",
+        "findComplementIndex"
+      ],
+      "relatedProblemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters"
+      ],
+      "prompt": "",
+      "content": "",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "",
+        "typescript": ""
+      },
+      "availableLanguages": [],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-04-03T13:58:08.528Z",
+      "searchText": "median of two sorted arrays solution walkthrough for median of two sorted arrays with code and practical use cases. identify the core operation required by the prompt and produce the expected output efficiently. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches. resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. animate lookup table growth while scanning inputs. visualize when candidate matches become valid outputs. buildfrequencymap findcomplementindex arrays hash-map lookup-frequency-matching"
+    },
+    {
+      "id": "palindrome-number",
+      "slug": "palindrome-number",
+      "title": "Palindrome Number",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "hash-map"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "industryIds": [
+        "developer-tools"
+      ],
+      "companyIds": [
+        "google"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays"
+      ],
+      "summary": "Solution walkthrough for palindrome number with code and practical use cases.",
+      "whatItAsks": "Identify the core operation required by the prompt and produce the expected output efficiently.",
+      "recognitionClues": [
+        "You need fast lookup while iterating once.",
+        "You are asked for indices, pairs, or direct matches."
+      ],
+      "whyPatternFits": "This pattern minimizes repeated scanning and keeps lookup decisions close to the traversal.",
+      "dailyUsefulness": "Useful in data validation, filtering, and UI state transformations encountered in daily product work.",
+      "interviewUsefulness": "This pattern appears frequently in screening rounds due to its clarity and optimization tradeoffs.",
+      "realWorldRelevance": "Maps to production concerns like deduplication, lookup acceleration, and ranking support.",
+      "useCases": [
+        "Resolve complementary value lookups in near real-time APIs.",
+        "Detect matching pairs in transactional or telemetry streams.",
+        "Use hash-map pairing logic in data validation pipelines."
+      ],
+      "demoIdeas": [
+        "Animate lookup table growth while scanning inputs.",
+        "Visualize when candidate matches become valid outputs."
+      ],
+      "reusableHelpers": [
+        "buildFrequencyMap",
+        "findComplementIndex"
+      ],
+      "relatedProblemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters"
+      ],
+      "prompt": "",
+      "content": "",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "",
+        "typescript": ""
+      },
+      "availableLanguages": [],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-04-03T13:58:08.531Z",
+      "searchText": "palindrome number solution walkthrough for palindrome number with code and practical use cases. identify the core operation required by the prompt and produce the expected output efficiently. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches. resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. animate lookup table growth while scanning inputs. visualize when candidate matches become valid outputs. buildfrequencymap findcomplementindex arrays hash-map lookup-frequency-matching"
+    },
+    {
+      "id": "remove-deplicates-from-sorted-array",
+      "slug": "remove-deplicates-from-sorted-array",
+      "title": "Remove Deplicates From Sorted Array",
+      "status": "published",
+      "difficulty": "Easy",
+      "questionTypeIds": [
+        "lookup-frequency-matching"
+      ],
+      "patternIds": [
+        "hash-map"
+      ],
+      "featureIds": [
+        "search-suggestions"
+      ],
+      "careerPathIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "industryIds": [
+        "developer-tools"
+      ],
+      "companyIds": [
+        "google"
+      ],
+      "roleIds": [
+        "frontend-engineer",
+        "backend-engineer"
+      ],
+      "tagIds": [
+        "arrays"
+      ],
+      "summary": "Solution walkthrough for remove deplicates from sorted array with code and practical use cases.",
+      "whatItAsks": "Identify the core operation required by the prompt and produce the expected output efficiently.",
+      "recognitionClues": [
+        "You need fast lookup while iterating once.",
+        "You are asked for indices, pairs, or direct matches."
+      ],
+      "whyPatternFits": "This pattern minimizes repeated scanning and keeps lookup decisions close to the traversal.",
+      "dailyUsefulness": "Useful in data validation, filtering, and UI state transformations encountered in daily product work.",
+      "interviewUsefulness": "This pattern appears frequently in screening rounds due to its clarity and optimization tradeoffs.",
+      "realWorldRelevance": "Maps to production concerns like deduplication, lookup acceleration, and ranking support.",
+      "useCases": [
+        "Resolve complementary value lookups in near real-time APIs.",
+        "Detect matching pairs in transactional or telemetry streams.",
+        "Use hash-map pairing logic in data validation pipelines."
+      ],
+      "demoIdeas": [
+        "Animate lookup table growth while scanning inputs.",
+        "Visualize when candidate matches become valid outputs."
+      ],
+      "reusableHelpers": [
+        "buildFrequencyMap",
+        "findComplementIndex"
+      ],
+      "relatedProblemSlugs": [
+        "add-two-numbers",
+        "concatenation-of-array",
+        "longest-palindromic-substring",
+        "longest-substring-without-repeating-characters"
+      ],
+      "prompt": "",
+      "content": "",
+      "snippetByLanguage": {
+        "swift": "",
+        "cpp": "",
+        "typescript": ""
+      },
+      "availableLanguages": [],
+      "readingTimeMinutes": 1,
+      "updatedAt": "2026-04-03T13:58:08.531Z",
+      "searchText": "remove deplicates from sorted array solution walkthrough for remove deplicates from sorted array with code and practical use cases. identify the core operation required by the prompt and produce the expected output efficiently. you need fast lookup while iterating once. you are asked for indices, pairs, or direct matches. resolve complementary value lookups in near real-time apis. detect matching pairs in transactional or telemetry streams. use hash-map pairing logic in data validation pipelines. animate lookup table growth while scanning inputs. visualize when candidate matches become valid outputs. buildfrequencymap findcomplementindex arrays hash-map lookup-frequency-matching"
     },
     {
       "id": "search-suggestions-system",
@@ -228,7 +593,7 @@
       },
       "availableLanguages": [],
       "readingTimeMinutes": 1,
-      "updatedAt": "2026-03-27T18:07:58.696Z",
+      "updatedAt": "2026-04-03T13:58:08.780Z",
       "searchText": "search suggestions system build incremental typeahead suggestions as a user types. return up to three lexicographically smallest products for each search prefix. you need results for every prefix, not one final query. results must be ordered and capped. prefix filtering dominates the workflow. product autocomplete in ecommerce search. command palette query suggestions. instant article lookup in docs portals. animate suggestions updating on each keystroke. compare strict prefix vs fuzzy fallback behavior. buildprefixindex rankfuzzymatches strings trie sorting trie lookup-frequency-matching"
     },
     {
@@ -308,7 +673,7 @@
         "typescript"
       ],
       "readingTimeMinutes": 1,
-      "updatedAt": "2026-03-27T18:07:58.701Z",
+      "updatedAt": "2026-04-03T13:58:08.785Z",
       "searchText": "two sum use a hash map to resolve complement lookups in one pass. find two indexes whose values add up to a target value. the prompt asks for a pair that satisfies a sum constraint. a brute-force nested loop works but is too slow. you can derive the needed value from current input. match request ids and acknowledgment ids in event streams. resolve complementary values in dashboard filters. validate pair constraints in backend payload processing. animate map growth and complement checks each iteration. show side-by-side brute force and hash map timelines. findpairbytarget buildindexmap arrays hash-map two-sum hash-map lookup-frequency-matching"
     }
   ]
